@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5107" started-at="2015-12-30T12:34:45Z" finished-at="2015-12-30T12:34:50Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5107" started-at="2015-12-30T12:34:45Z" finished-at="2015-12-30T12:34:50Z">
+      <class name="vTestCases.GeneralLogin">
+        <test-method status="PASS" signature="loginApplication()[pri:0, instance:vTestCases.GeneralLogin@9ce9aa3]" name="loginApplication" duration-ms="5097" started-at="2015-12-30T18:04:45Z" finished-at="2015-12-30T18:04:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+      </class> <!-- vTestCases.GeneralLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

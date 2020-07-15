@@ -1,0 +1,42 @@
+package frameworkPkg;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class FrameWorkClass {
+	public WebDriver driver;
+	
+	
+	@Parameters({"browser"})
+	public void test1(String browser){
+		 System.out.println("browser from xml is" +browser);
+			if(browser.equals("chrome")){
+				
+				System.setProperty("webdriver.chromedriver.driver","E:\\library sel\\selenium\\chromedriver.exe");
+				driver=new ChromeDriver();				
+			
+		}
+		else if(browser.equals("ff")){
+			System.setProperty("webdriver.gecko.driver", "E:\\library sel\\geckodriver.exe");
+			driver=new FirefoxDriver();
+			
+		}
+		
+		driver.manage().window().maximize();	
+		driver.get("https://www.google.co.in/");
+		
+	}
+	@Test
+	 public void verify_title(){   
+	   String title = driver.getTitle();
+	   Assert.assertEquals("Google", title);
+	   System.out.println("Title Is Fine.");   
+	 } 
+	
+}
+
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteTest1]" parallel="tests">
+  <test name="chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrom"/>
+    <classes>
+      <class name="frameworkPkg.FrameWorkClass">
+        <methods>
+          <include name="verify_title"/>
+          <include name="test1"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- frameworkPkg.FrameWorkClass -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [SuiteTest1] -->

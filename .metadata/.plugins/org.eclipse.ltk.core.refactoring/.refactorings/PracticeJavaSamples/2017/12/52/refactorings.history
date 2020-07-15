@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;Pages&apos; to &apos;CoreAccessPODApplications/src/test/java/CoreAccessPOD.CoreAccessPODApplications&apos;&#x0D;&#x0A;- Original project: &apos;PracticeJavaSamples&apos;&#x0D;&#x0A;- Destination element: &apos;CoreAccessPODApplications/src/test/java/CoreAccessPOD.CoreAccessPODApplications&apos;&#x0D;&#x0A;- Original element: &apos;PracticeJavaSamples/src/Pages&apos;" description="Copy package" destination="=CoreAccessPODApplications/src\/test\/java&lt;CoreAccessPOD.CoreAccessPODApplications" element1="/src&lt;Pages" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1514443187390" version="1.0"/>
+</session>

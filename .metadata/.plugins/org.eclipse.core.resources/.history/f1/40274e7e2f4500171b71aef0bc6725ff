@@ -1,0 +1,29 @@
+package test_automation_webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+	public class TestJS {
+
+	public static void main(String[] args) {		
+			System.setProperty("webdriver.gecko.driver", "E:\\library sel\\geckodriver.exe");
+			FirefoxDriver driver1 = new FirefoxDriver();
+			driver1.manage().window().maximize();
+			driver1.navigate().to("https://www.amazon.com/");
+			WebElement searchTextBox=driver1.findElement(By.id("twotabsearchtextbox"));
+			searchTextBox.sendKeys("Mobiles");
+			WebElement goButton = driver1.findElement(By.cssSelector("input[value=Go]"));
+			//safeJavaScriptClick(goButton);*/
+		}
+
+	private static void //safeJavaScriptClick(WebElement goButton) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	}
+
+	
+

@@ -1,0 +1,13 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+user = ""
+pwd = ""
+driver = webdriver.Firefox()
+driver.get("https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
+assert "Gmail" in driver.title
+elem = driver.find_element_by_id("identifierId")
+elem.send_keys(user)
+elem = driver.find_element_by_id("pass")
+elem.send_keys(pwd)
+elem.send_keys(Keys.RETURN)
+driver.close()

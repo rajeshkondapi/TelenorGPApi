@@ -1,0 +1,152 @@
+package RestAPI.RestAPI;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.jayway.restassured.http.ContentType;
+import com.jayway.restassured.response.Response;
+import com.jayway.restassured.response.ValidatableResponse;
+
+import static com.jayway.restassured.RestAssured.*; // if static no need create object
+import static org.testng.Assert.assertEquals;
+
+public class WheaterGetRequest {
+
+	// Status code for 200
+	/*@Test
+	public void Test_01() {
+
+		Response resp1 = when().get("http://api.openweathermap.org/data/2.5/weather?q=London&appid=597f83e6b8efa3f4345e909f37f94df8");
+		 System.out.println("response status is = "+resp1.getStatusCode());
+		 Assert.assertEquals(resp1.getStatusCode(), 200);
+		 //resp.
+
+		}
+	// Status code for 401
+		@Test
+		public void Test_02() {
+
+			Response resp2 = when().get("http://api.openweathermap.org/data/2.5/weather?q=London&appid=");
+			 System.out.println("response status is = "+resp2.getStatusCode());
+			 Assert.assertEquals(resp2.getStatusCode(), 401);
+		}
+
+	// use parameters with REST assured
+	@Test
+	public void Test_03() {
+
+		Response resp3 = given().param("q", "city").
+				param("appid", "597f83e6b8efa3f4345e909f37f94df8").
+				when().get("http://api.openweathermap.org/data/2.5/weather");
+		System.out.println("response status is = "+resp3.getStatusCode());
+		
+		//resp3.getStatusCode();
+		Assert.assertEquals(resp3.getStatusCode(), 200);
+		if(resp3.getStatusCode() == 200){
+			System.out.println("API is working Fine");
+		}
+		else{
+			System.out.println("API Not working");
+		}
+
+
+	}
+	//Asserting Tescases in Rest Assured api
+	@Test
+	public void Test_04() {
+
+		given().param("q", "city").
+		param("appid", "597f83e6b8efa3f4345e909f37f94df8").
+		when().
+		get("http://api.openweathermap.org/data/2.5/weather").
+		then().
+		assertThat().statusCode(200);
+
+	}*/
+	// using parameter city and getting response in Json
+	@Test
+	public void Test_05() {
+
+		Response resp5 = given().param("q", "city").
+				param("appid", "597f83e6b8efa3f4345e909f37f94df8").
+				when().
+				get("http://api.openweathermap.org/data/2.5/weather");
+
+		System.out.println(resp5.asString());
+
+
+	} 
+	// using Id
+	@Test
+	public void Test_06(){
+		Response resp6 = given().
+				parameter("id", "2172797").
+				param("appid", "597f83e6b8efa3f4345e909f37f94df8").
+				when().
+				get("http://api.openweathermap.org/data/2.5/weather");
+		Assert.assertEquals(resp6.getStatusCode(), 200);
+		
+		System.out.println(resp6.asString());
+
+	} 
+	//using Zipcode
+	@Test
+	public void Test_07(){
+		Response resp7 = given().
+				parameter("zip", "500033,in").
+				param("appid", "597f83e6b8efa3f4345e909f37f94df8").
+				when().
+				get("http://api.openweathermap.org/data/2.5/weather");
+		Assert.assertEquals(resp7.getStatusCode(), 200);
+		
+		System.out.println(resp7.asString());
+
+	}
+	
+	// API to get Wheather report by id and geography locations
+	@Test
+	public void Test_08() {
+		Response resp = given().
+				parameter("zip", "500033,in").
+				parameter("appid", "597f83e6b8efa3f4345e909f37f94df8").
+				when().
+				get("http://api.openweathermap.org/data/2.5/weather");
+		String reporzip = resp.then().
+				contentType(ContentType.JSON).extract().path("weather[0].description");
+		System.out.println("Weather description by zip Code = " +reporzip);
+		
+		
+		String lon = String.valueOf(
+				resp.
+				then().
+				contentType(ContentType.JSON).
+				extract().
+				path("coord.lon"));
+		System.out.println("Longtitude is " +lon);
+		
+		String lat = String.valueOf(
+				resp.
+				then().
+				contentType(ContentType.JSON).
+				extract().
+				path("coord.lat"));
+		System.out.println("Latitude is " +lat);
+		
+		String reportbycoordinates = given().
+				parameter("zip", "500033,in").
+				parameter("appid", "597f83e6b8efa3f4345e909f37f94df8").
+				when().
+				get("http://api.openweathermap.org/data/2.5/weather").
+				then().
+				contentType(ContentType.JSON).
+				extract().
+				path("weather[0].description");
+		System.out.println("Weather description by coordinates = "+reportbycoordinates);
+				
+		Assert.assertEquals(reporzip, reportbycoordinates);
+				
+		
+	}*/
+	
+
+	}

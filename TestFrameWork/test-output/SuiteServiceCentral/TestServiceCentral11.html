@@ -1,0 +1,323 @@
+<html>
+<head>
+<title>TestNG:  TestServiceCentral11</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestServiceCentral11</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 20 11:55:22 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>50 seconds (50113 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='serviceCentralPkg.ServiceCentral11.afterClass()'><b>afterClass</b><br>Test class: serviceCentralPkg.ServiceCentral11</td>
+<td><div><pre>java.lang.NullPointerException
+	at serviceCentralPkg.ServiceCentral11.afterClass(ServiceCentral11.java:411)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1777238524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1777238524'><pre>java.lang.NullPointerException
+	at serviceCentralPkg.ServiceCentral11.afterClass(ServiceCentral11.java:411)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:211)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>serviceCentralPkg.ServiceCentral11@cb5822</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='serviceCentralPkg.ServiceCentral11.f1()'><b>f1</b><br>Test class: serviceCentralPkg.ServiceCentral11</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+a.org.xpi
+1513751132719	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1513751132721	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1513751132721	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1513751132726	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1513751132727	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1513751132728	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513751132728	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513751132821	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=7.63283) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=6.4995) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2504] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513751135542	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513751135554	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513751136187	addons.productaddons	INFO	Completed downloading document
+1513751136712	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751136882	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-bfd3ac
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=22.8168) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513751143016	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751143023	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-7f6704
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;SILCP0160&apos;, ip: &apos;192.168.100.83&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at serviceCentralPkg.ServiceCentral11.f1(ServiceCentral11.java:368)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+a.org.xpi
+1513751132719	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1513751132721	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1513751132721	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1513751132726	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1513751132727	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1513751132728	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513751132728	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513751132821	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=7.63283) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=6.4995) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2504] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513751135542	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513751135554	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513751136187	addons.productaddons	INFO	Completed downloading document
+1513751136712	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751136882	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-bfd3ac
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=22.8168) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513751143016	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751143023	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-7f6704
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 32 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace479920916", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace479920916'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+a.org.xpi
+1513751132719	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1513751132721	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1513751132721	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1513751132726	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1513751132727	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1513751132728	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513751132728	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513751132821	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=7.63283) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=6.4995) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2504] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513751135542	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513751135554	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513751136187	addons.productaddons	INFO	Completed downloading document
+1513751136712	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751136882	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-bfd3ac
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=22.8168) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513751143016	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751143023	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-7f6704
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;SILCP0160&apos;, ip: &apos;192.168.100.83&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at serviceCentralPkg.ServiceCentral11.f1(ServiceCentral11.java:368)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+a.org.xpi
+1513751132719	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1513751132720	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1513751132721	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1513751132721	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on clicktoplay-rollout@mozilla.org in app-system-defaults
+1513751132722	addons.xpi	DEBUG	Existing add-on e10srollout@mozilla.org in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1513751132723	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1513751132724	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1513751132725	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1513751132726	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1513751132727	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1513751132728	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513751132728	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513751132821	addons.productaddons	INFO	sending request to: https://aus5.mozilla.org/update/3/GMP/56.0.2/20171024165158/WINNT_x86_64-msvc-x64/en-US/release/Windows_NT%2010.0.0.0%20(x64)/default/default/update.xml
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=7.63283) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=6.4995) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2504] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2884] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513751135542	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513751135554	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513751136187	addons.productaddons	INFO	Completed downloading document
+1513751136712	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751136882	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-bfd3ac
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=22.8168) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513751143016	addons.productaddons	INFO	downloadXHR File download. status=200
+1513751143023	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-7f6704
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 32 more
+</pre></div></td>
+<td>50</td>
+<td>serviceCentralPkg.ServiceCentral11@cb5822</td></tr>
+</table><p>
+</body>
+</html>

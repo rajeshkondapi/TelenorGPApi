@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Webdriver]">
+  <test name="Testdrivers chrome(failed)">
+    <parameter name="password" value="Krajesh1234"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="username" value="SIL-0400"/>
+    <classes>
+      <class name="frameworkPkg.FrameWorkClass">
+        <methods>
+          <include name="credentials" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- frameworkPkg.FrameWorkClass -->
+    </classes>
+  </test> <!-- Testdrivers chrome(failed) -->
+</suite> <!-- Failed suite [Webdriver] -->

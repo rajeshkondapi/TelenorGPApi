@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [ShoppingCarts]" parallel="tests">
+  <test name="flipkart(failed)" parallel="tests">
+    <classes>
+      <class name="shoping2.SnapDeal">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- shoping2.SnapDeal -->
+      <class name="shoping1.Flipkart">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="init"/>
+          <include name="buyAndRemoveFromCart"/>
+          <include name="searchAndSelectProduct"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- shoping1.Flipkart -->
+    </classes>
+  </test> <!-- flipkart(failed) -->
+  <test name="Myntra(failed)" parallel="tests">
+    <classes>
+      <class name="shoping2.SnapDeal">
+        <methods>
+          <include name="buyAndRemoveFromCart"/>
+          <include name="searchAndSelectProduct"/>
+          <include name="init"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- shoping2.SnapDeal -->
+      <class name="shoping1.Flipkart">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- shoping1.Flipkart -->
+    </classes>
+  </test> <!-- Myntra(failed) -->
+</suite> <!-- Failed suite [ShoppingCarts] -->

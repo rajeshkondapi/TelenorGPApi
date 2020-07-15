@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [webDriver]" parallel="tests">
+  <parameter name="browser" value="IE"/>
+  <test name="Test In Google Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="CRM"/>
+    <classes>
+      <class name="tests.Testcase1">
+        <methods>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="closebrowser"/>
+          <include name="closebrowser"/>
+          <include name="verify_title"/>
+        </methods>
+      </class> <!-- tests.Testcase1 -->
+    </classes>
+  </test> <!-- Test In Google Chrome(failed) -->
+</suite> <!-- Failed suite [webDriver] -->

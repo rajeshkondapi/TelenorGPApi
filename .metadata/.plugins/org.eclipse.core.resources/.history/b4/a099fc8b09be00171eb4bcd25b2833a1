@@ -1,0 +1,31 @@
+
+
+
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Browsers {
+	public static WebDriver driver;
+	
+	public static void chromeDriver(){		
+		
+	 	System.setProperty("webdriver.chrome.driver","C://Users//manjit.toodi//Desktop//Drivers//chromedriver.exe");
+	    driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS) ;
+	}
+	
+	
+	public static void fireFoxDriver(){		
+		
+		System.setProperty("webdriver.gecko.driver","C:\\Users\\manjit.toodi\\Desktop\\Drivers\\geckodriver.exe");
+		driver=new FirefoxDriver();
+		//driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	}
+
+}

@@ -1,0 +1,18 @@
+package test_automation_webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ServiceCentral {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "E:\\library sel\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		Wbd.get("http://servicecentral.sagarsoft.com/");
+		Wbd.findElement(By.xpath("html/body/div[1]/table/tbody/tr[2]/td[2]/div/div/div[3]/form/ul/li[5]/input")).sendKeys("SIL-0400");
+		//Wbd.findElement(By.name("password")).sendKeys("Krajesh1234");
+		
+	}
+
+}

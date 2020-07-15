@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteServiceCentral]">
+  <test name="TestServiceCentral11(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="f1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+    </classes>
+  </test> <!-- TestServiceCentral11(failed) -->
+  <test name="TestServiceCentral12(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f1"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral12(failed) -->
+  <test name="TestServiceCentral13(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="f1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral13(failed) -->
+  <test name="TestServiceCentral14(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f1"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral14(failed) -->
+  <test name="TestServiceCentral15(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f1"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral15(failed) -->
+  <test name="TestServiceCentral16(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f1"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral16(failed) -->
+  <test name="TestServiceCentral17(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="f1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral17(failed) -->
+  <test name="TestServiceCentral18(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="f1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral18(failed) -->
+  <test name="TestServiceCentral19(failed)">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral17">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral17 -->
+      <class name="serviceCentralPkg.ServiceCentral19">
+        <methods>
+          <include name="f1"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral19 -->
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+      <class name="serviceCentralPkg.ServiceCentral15">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral15 -->
+      <class name="serviceCentralPkg.ServiceCentral14">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral14 -->
+      <class name="serviceCentralPkg.ServiceCentral12">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral12 -->
+      <class name="serviceCentralPkg.ServiceCentral16">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral16 -->
+      <class name="serviceCentralPkg.ServiceCentral18">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral18 -->
+      <class name="serviceCentralPkg.ServiceCentral11">
+        <methods>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- serviceCentralPkg.ServiceCentral11 -->
+    </classes>
+  </test> <!-- TestServiceCentral19(failed) -->
+</suite> <!-- Failed suite [SuiteServiceCentral] -->

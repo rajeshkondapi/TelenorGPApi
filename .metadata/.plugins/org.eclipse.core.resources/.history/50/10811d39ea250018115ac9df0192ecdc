@@ -1,0 +1,75 @@
+package Pages;
+
+import java.util.ArrayList;
+
+import org.junit.Assert;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class LoginPage {
+	WebDriver driver;
+	By email12 = By.cssSelector("#ctl00_mainContent_txtEmail");	
+	By submitbtn = By.cssSelector("#ctl00_mainContent_btnEmailSubmit");
+	By gmaillogin = By.cssSelector("#identifierId");
+	By gmailpass = By.cssSelector(".whsOnd.zHQkBf");
+	By gmailNextbtn = By.cssSelector(".RveJvd.snByac");
+	
+	
+
+public void loginToNovo(String email) throws Exception{
+	driver.findElement(email12).sendKeys(email);
+	
+	//driver.findElement(Nextbtn).click();
+	Thread.sleep(2000);
+	//driver.findElement(password).sendKeys(pass);
+	driver.findElement(submitbtn).click();
+}
+// constructor
+public LoginPage(WebDriver driver){
+	this.driver = driver;
+	
+}
+public void typeUserName(String email){
+	driver.findElement(email12).sendKeys(email);
+}
+public void ClickButton(){
+	driver.findElement(submitbtn).click();
+	
+}
+public void handlealert(){
+	try {
+	    WebDriverWait wait = new WebDriverWait(driver, 2);
+	    wait.until(ExpectedConditions.alertIsPresent());
+	    Alert alert = driver.switchTo().alert();
+	    System.out.println(alert.getText());
+	    alert.accept();
+	    Assert.assertTrue(alert.getText().contains("A log-in token has been sent to your email."));
+	} catch (Exception e) {
+	    //exception handling
+	}
+}
+
+public void token(String email , String password) throws Exception{
+	driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t");
+	ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+	driver.switchTo().window(tabs.get(0));
+	driver.get("https://accounts.google.com");
+	driver.findElement(gmaillogin).sendKeys(email);
+	driver.findElement(gmailNextbtn).click();
+	Thread.sleep(2000);	
+	driver.findElement(gmailpass).sendKeys(password);
+	driver.findElement(gmailNextbtn).click();
+	
+	
+}
+/*public void typePassword(String pass){
+	driver.findElement(password).sendKeys(pass);
+	ClickButton();
+	
+}*/
+}

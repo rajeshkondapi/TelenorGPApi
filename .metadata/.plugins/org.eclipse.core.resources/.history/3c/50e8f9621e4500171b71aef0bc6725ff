@@ -1,0 +1,10 @@
+package test_automation_webdriver;
+
+public class TestAllScenarios {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

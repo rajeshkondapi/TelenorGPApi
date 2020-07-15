@@ -1,0 +1,316 @@
+<html>
+<head>
+<title>TestNG:  TestServiceCentral14</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestServiceCentral14</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 20 11:39:13 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>47 seconds (47864 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='serviceCentralPkg.ServiceCentral14.f1()'><b>f1</b><br>Test class: serviceCentralPkg.ServiceCentral14</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+750161239	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513750161239	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513750162027	addons.productaddons	INFO	Completed downloading document
+1513750162369	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750162377	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-84083a
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=5.21658) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513750164375	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513750164402	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513750167605	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750167610	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-ced149
+1513750183406	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1513750183407	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
+1513750183408	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
+1513750183429	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
+1513750183431	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1513750183432	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
+1513750183433	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
+1513750183435	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1513750183436	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513750184315	addons.manager	DEBUG	shutdown
+1513750184315	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1513750184315	addons.xpi	DEBUG	shutdown
+1513750184316	addons.xpi-utils	DEBUG	shutdown
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1513750184317	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1513750184332	addons.manager	DEBUG	Async provider shutdown done
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 6024] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;SILCP0160&apos;, ip: &apos;192.168.100.83&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at serviceCentralPkg.ServiceCentral14.f1(ServiceCentral14.java:360)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+750161239	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513750161239	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513750162027	addons.productaddons	INFO	Completed downloading document
+1513750162369	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750162377	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-84083a
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=5.21658) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513750164375	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513750164402	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513750167605	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750167610	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-ced149
+1513750183406	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1513750183407	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
+1513750183408	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
+1513750183429	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
+1513750183431	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1513750183432	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
+1513750183433	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
+1513750183435	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1513750183436	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513750184315	addons.manager	DEBUG	shutdown
+1513750184315	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1513750184315	addons.xpi	DEBUG	shutdown
+1513750184316	addons.xpi-utils	DEBUG	shutdown
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1513750184317	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1513750184332	addons.manager	DEBUG	Async provider shutdown done
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 6024] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 32 more
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173346575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1173346575'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+750161239	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513750161239	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513750162027	addons.productaddons	INFO	Completed downloading document
+1513750162369	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750162377	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-84083a
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=5.21658) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513750164375	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513750164402	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513750167605	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750167610	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-ced149
+1513750183406	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1513750183407	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
+1513750183408	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
+1513750183429	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
+1513750183431	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1513750183432	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
+1513750183433	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
+1513750183435	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1513750183436	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513750184315	addons.manager	DEBUG	shutdown
+1513750184315	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1513750184315	addons.xpi	DEBUG	shutdown
+1513750184316	addons.xpi-utils	DEBUG	shutdown
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1513750184317	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1513750184332	addons.manager	DEBUG	Async provider shutdown done
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 6024] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;SILCP0160&apos;, ip: &apos;192.168.100.83&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at serviceCentralPkg.ServiceCentral14.f1(ServiceCentral14.java:360)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:877)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1201)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+750161239	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1513750161239	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1513750162027	addons.productaddons	INFO	Completed downloading document
+1513750162369	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750162377	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-84083a
+Crash Annotation GraphicsCriticalError: |[C0][GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v= (t=5.21658) [GFX1]: Potential driver version mismatch ignored due to missing DLLs igd10umd64 v= and igd10iumd64 v=
+1513750164375	DeferredSave.webext.sc.lz4	DEBUG	Starting write
+1513750164402	DeferredSave.webext.sc.lz4	DEBUG	Write succeeded
+1513750167605	addons.productaddons	INFO	downloadXHR File download. status=200
+1513750167610	addons.productaddons	INFO	Downloaded file will be saved to C:\Users\RAJESH~1.KON\AppData\Local\Temp\tmpaddon-ced149
+1513750183406	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1513750183407	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 65
+1513750183408	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 10.12.0
+1513750183429	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 0.1
+1513750183431	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1513750183432	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.3
+1513750183433	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 3.00
+1513750183434	addons.xpi	DEBUG	Calling bootstrap method shutdown on clicktoplay-rollout@mozilla.org version 1.4
+1513750183435	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1513750183436	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 0.0.0
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 2684] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3140] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1513750184315	addons.manager	DEBUG	shutdown
+1513750184315	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1513750184315	addons.xpi	DEBUG	shutdown
+1513750184316	addons.xpi-utils	DEBUG	shutdown
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1513750184316	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1513750184317	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1513750184318	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1513750184332	addons.manager	DEBUG	Async provider shutdown done
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+Unable to read VR Path Registry from C:\Users\rajesh.kondapi\AppData\Local\openvr\openvrpaths.vrpath
+[GPU 6024] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+	... 32 more
+</pre></div></td>
+<td>47</td>
+<td>serviceCentralPkg.ServiceCentral14@57baeedf</td></tr>
+</table><p>
+</body>
+</html>

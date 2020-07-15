@@ -1,0 +1,31 @@
+package test_automation_webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class ServiceCentral {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "E:\\library sel\\geckodriver.exe");
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("http://servicecentral.sagarsoft.com/");
+		
+		//driver.findElement(By.name("login")).sendKeys("SIL-0400");
+		//driver.findElement(By.name("password")).sendKeys("Krajesh1234");
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement element = wait.until(
+			    ExpectedConditions.visibilityOfElementLocated(By.name("login"))
+			    ExpectedConditions.visibilityOfElementLocated(By.name("login"))
+			    
+			);
+		element.sendKeys("SIL-0400");
+	
+		
+	}
+
+}

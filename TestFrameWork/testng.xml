@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral11"/>
+      <class name="serviceCentralPkg.ServiceCentral12"/>
+      <class name="serviceCentralPkg.ServiceCentral13"/>
+      <class name="serviceCentralPkg.ServiceCentral14"/>
+     
+      <!-- class name="ExcelDatadropdown.NewTestExcelData"/>
+      <class name="serviceCentralPkg.ServiceCentral19"/>
+      <class name="serviceCentralPkg.ServiceCentral16"/>
+      <class name="serviceCentralPkg.ServiceCentral15"/>
+      <class name="serviceCentralPkg.ServiceCentral18"/>
+      <class name="serviceCentralPkg.ServiceCentral17"/ -->
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

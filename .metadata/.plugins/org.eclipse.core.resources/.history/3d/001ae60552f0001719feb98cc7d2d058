@@ -1,0 +1,61 @@
+package Pages;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage {
+	WebDriver driver;
+	By username = By.cssSelector("#identifierId");
+	By password = By.cssSelector(".whsOnd.zHQkBf");
+	By Nextbtn = By.cssSelector(".RveJvd.snByac");
+	
+	By gmaillogin = By.cssSelector("#identifierId");
+	By gmailpass = By.cssSelector(".whsOnd.zHQkBf");
+	By gmailNextbtn = By.cssSelector(".RveJvd.snByac");
+	
+
+public void loginToGmail(String email, String pass) throws Exception{
+	driver.findElement(username).sendKeys(email);
+	
+	driver.findElement(Nextbtn).click();
+	Thread.sleep(2000);
+	driver.findElement(password).sendKeys(pass);
+	driver.findElement(Nextbtn).click();
+}
+// constructor
+public LoginPage(WebDriver driver){
+	this.driver = driver;
+	
+}
+public void typeUserName(String email){
+	driver.findElement(username).sendKeys(email);
+}
+public void ClickButton(){
+	driver.findElement(Nextbtn).click();
+	
+}
+public void typePassword(String pass){
+	driver.findElement(password).sendKeys(pass);
+	ClickButton();
+	
+}
+public void token(String email , String password) throws Exception{
+	//driver.switch_to_window(driver.window_handles[-1])
+	 ((JavascriptExecutor)driver).executeScript("window.open();");
+	//driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t");
+	 ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+	driver.get("https://accounts.google.com");
+	driver.findElement(gmaillogin).sendKeys(email);
+	driver.findElement(gmailNextbtn).click();
+	Thread.sleep(2000);	
+	driver.findElement(gmailpass).sendKeys(password);
+	driver.findElement(gmailNextbtn).click();
+	
+	
+}
+}

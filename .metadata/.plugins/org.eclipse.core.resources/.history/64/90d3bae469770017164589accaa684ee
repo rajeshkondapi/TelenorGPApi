@@ -1,0 +1,24 @@
+package first;
+
+import org.openqa.selenium.WebDriver;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class test {
+
+	@Test
+	 public void verifyHomepageTitle() {
+	     
+	     System.out.println("launching firefox browser"); 
+	     //System.setProperty("webdriver.firefox.marionette", driverPath);
+	     System.setProperty("webdriver.gecko.driver", "E:\\library sel\\geckodriver.exe");
+	     WebDriver driver = new FirefoxDriver();
+	     driver.get("https://www.google.co.in/");
+	     String expectedTitle = "Welcome: Mercury Tours";
+	     String actualTitle = driver.getTitle();
+	     Assert.assertEquals(actualTitle, expectedTitle);
+	     System.out.println("Verified");
+	     driver.close();
+}
+}

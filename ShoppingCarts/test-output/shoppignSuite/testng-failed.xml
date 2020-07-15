@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [shoppignSuite]" parallel="classes">
+  <test name="shoppingTest(failed)" parallel="classes">
+    <classes>
+      <class name="shoping2.SnapDeal">
+        <methods>
+          <include name="quit"/>
+          <include name="buyAndRemoveFromCart"/>
+          <include name="searchAndSelectProduct"/>
+          <include name="init"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- shoping2.SnapDeal -->
+      <class name="shoping1.Flipkart">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="init"/>
+          <include name="buyAndRemoveFromCart"/>
+          <include name="searchAndSelectProduct"/>
+        </methods>
+      </class> <!-- shoping1.Flipkart -->
+    </classes>
+  </test> <!-- shoppingTest(failed) -->
+</suite> <!-- Failed suite [shoppignSuite] -->

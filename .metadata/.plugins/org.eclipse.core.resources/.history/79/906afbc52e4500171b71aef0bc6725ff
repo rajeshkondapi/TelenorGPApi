@@ -1,0 +1,39 @@
+package test_automation_webdriver;
+
+public class TestJS {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+
+		
+		public void testClickJS() throws Exception {
+			FirefoxDriver driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			driver.navigate().to("http://www.amazon.com/");
+			WebElement searchTextBox=driver.findElement(By.id("twotabsearchtextbox"));
+			searchTextBox.sendKeys("Mobiles");
+			WebElement goButton = driver.findElement(By.cssSelector("input[value=Go]"));
+			safeJavaScriptClick(goButton);
+		}
+
+	}
+	public void safeJavaScriptClick(WebElement element) throws Exception {
+		try {
+			if (element.isEnabled() && element.isDisplayed()) {
+				System.out.println("Clicking on element with using java script click");
+
+				JavascriptExecutor driver;
+				((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+			} else {
+				System.out.println("Unable to click on element");
+			}
+		} catch (StaleElementReferenceException e) {
+			System.out.println("Element is not attached to the page document "+ e.getStackTrace());
+		} catch (NoSuchElementException e) {
+			System.out.println("Element was not found in DOM "+ e.getStackTrace());
+		} catch (Exception e) {
+			System.out.println("Unable to click on element "+ e.getStackTrace());
+		}
+	}
+}
+

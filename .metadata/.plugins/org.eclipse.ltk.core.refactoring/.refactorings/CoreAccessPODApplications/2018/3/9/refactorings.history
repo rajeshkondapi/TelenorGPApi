@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginPage.java&apos; to &apos;Cucumber_Selenium/src/Pages&apos;&#x0D;&#x0A;- Original project: &apos;CoreAccessPODApplications&apos;&#x0D;&#x0A;- Destination element: &apos;Cucumber_Selenium/src/Pages&apos;&#x0D;&#x0A;- Original element: &apos;Pages.LoginPage.java&apos;" description="Copy compilation unit" destination="=Cucumber_Selenium/src&lt;Pages" element1="/src\/test\/java&lt;Pages{LoginPage.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1519971922871" units="1" version="1.0"/>
+</session>

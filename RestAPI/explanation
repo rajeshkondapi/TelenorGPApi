@@ -1,0 +1,48 @@
+Required Dependencies: 
+1) testng  --framework
+2) rest-assured  -- brings the simplicity in Testing and validating REST services
+3) json-path  -- Makes it easy to parse JSON documents
+4) json-schema-validator  -- If you want to validate that a JSON response confirms to a Json Schema you can use the json-schema-validator module
+
+plugins:
+1) maven-compiler-plugin
+2) maven-surefire-plugin
+
+Xml Suite file:
+1) testng.xml
+
+
+equalTo, hasItems, less than,Greater than are Ham crest matchers which you should statically import from org.hamcrest.Matchers.
+
+
+created a pakg
+class(Posts) is handling id, title , author by creating a class seperate in new pakg
+creating functions to manupulate these values(id, title ,author) using setters and getters.
+put- when we want to update the entry we use put method.
+
+post - adding new data
+put - changing or updating
+		but using put we need send all the values , other wise null will return for other entries
+patch - to update only particular field 
+delete - to delete data
+
+
+WeatherGetRequest  -  in this we wrote test cases for getting information on weather report i.e wind,climate,humidity,temp...
+					using API key .. i.e taking permissions from http://api.openweathermap.org/
+					
+JsonServerAPITesting - 
+		In this we wrote code for CRUD operations to access locally i.e Json format (db.json)
+		To this we need to install 
+		
+				https://github.com/typicode/json-server/issues/370
+			1) Nodejs (Set node path in environment)
+			2) Install Json Server by cmd (https://github.com/typicode/json-server)
+			3) To start the Json server locally we need to run the cmd i.e.,  (json-server --watch db.json)
+			
+			if path has not set in environment variable we can do in alternate way to run the json by entering the cmd as
+				node "C:\Users\rajesh.kondapi\AppData\Roaming\npm\node_modules\json-server\bin\index.js" Desktop\db.json
+			
+			For change in port number under localhost cmd is
+				run-json-server -p 3001 db.json	
+				s+enters is used for screenshot in cmd terminal.
+			

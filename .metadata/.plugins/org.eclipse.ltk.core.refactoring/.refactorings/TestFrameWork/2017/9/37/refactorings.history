@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;TestExcelDropDown.java&apos; to &apos;TestFrameWork/src/beanRelated&apos;&#x0D;&#x0A;- Original project: &apos;TestFrameWork&apos;&#x0D;&#x0A;- Destination element: &apos;TestFrameWork/src/beanRelated&apos;&#x0D;&#x0A;- Original element: &apos;ExcelDatadropdown.TestExcelDropDown.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;beanRelated" element1="/src&lt;ExcelDatadropdown{TestExcelDropDown.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1505130199108" units="1" version="1.0"/>
+</session>

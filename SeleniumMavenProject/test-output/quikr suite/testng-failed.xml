@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [quikr suite]">
+  <test name="Test_Base(failed)">
+    <classes>
+      <class name="com.selenium.TestBase.TestBaseClass">
+        <methods>
+          <include name="intilize"/>
+        </methods>
+      </class> <!-- com.selenium.TestBase.TestBaseClass -->
+      <class name="com.selenium.UtilityFiles.Read_xls">
+        <methods>
+          <include name="testImportexport1"/>
+        </methods>
+      </class> <!-- com.selenium.UtilityFiles.Read_xls -->
+    </classes>
+  </test> <!-- Test_Base(failed) -->
+</suite> <!-- Failed suite [quikr suite] -->

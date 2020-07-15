@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteServiceCentral">
+ 
+ 
+   <test name="TestServiceCentral1">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral10"/>      
+    </classes>
+  </test> 
+  
+  
+   <test name="TestServiceCentral2">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral11"/>      
+    </classes>
+  </test>
+  <test name="TestServiceCentral3">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral12"/>      
+    </classes>
+  </test>
+  <test name="TestServiceCentral4">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral13"/>      
+    </classes>
+  </test>
+  <test name="TestServiceCentral5">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral14"/>      
+    </classes>
+  </test>
+  <test name="TestServiceCentral6">
+    <classes>
+      <class name="serviceCentralPkg.ServiceCentral15"/>      
+    </classes>
+  </test>
+
+  
+  
+  
+  
+    
+  
+</suite> <!-- SuiteServiceCentral -->

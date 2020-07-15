@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="210850" started-at="2017-06-26T15:05:13Z" finished-at="2017-06-26T15:08:44Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="210850" started-at="2017-06-26T15:05:13Z" finished-at="2017-06-26T15:08:44Z">
+      <class name="com.selenium.UtilityFiles.VerifyMultipleUserLogins">
+        <test-method status="PASS" signature="testImportexport1()[pri:0, instance:com.selenium.UtilityFiles.VerifyMultipleUserLogins@b5cdba]" name="testImportexport1" duration-ms="33215" started-at="2017-06-26T20:35:39Z" finished-at="2017-06-26T20:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testImportexport1 -->
+      </class> <!-- com.selenium.UtilityFiles.VerifyMultipleUserLogins -->
+      <class name="com.selenium.UtilityFiles.AddCustomers">
+        <test-method status="PASS" signature="customersAdd()[pri:0, instance:com.selenium.UtilityFiles.AddCustomers@cbfb61]" name="customersAdd" duration-ms="91960" started-at="2017-06-26T20:37:12Z" finished-at="2017-06-26T20:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customersAdd -->
+      </class> <!-- com.selenium.UtilityFiles.AddCustomers -->
+      <class name="com.selenium.UtilityFiles.AddCustomerGroups">
+        <test-method status="PASS" signature="intilize()[pri:0, instance:com.selenium.UtilityFiles.AddCustomerGroups@1f37ef1]" name="intilize" is-config="true" duration-ms="25890" started-at="2017-06-26T20:35:13Z" finished-at="2017-06-26T20:35:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intilize -->
+        <test-method status="PASS" signature="customersAdd()[pri:0, instance:com.selenium.UtilityFiles.AddCustomerGroups@1f37ef1]" name="customersAdd" duration-ms="59719" started-at="2017-06-26T20:36:12Z" finished-at="2017-06-26T20:37:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customersAdd -->
+        <test-method status="PASS" signature="close_browser()[pri:0, instance:com.selenium.UtilityFiles.AddCustomerGroups@1f37ef1]" name="close_browser" is-config="true" duration-ms="29" started-at="2017-06-26T20:38:44Z" finished-at="2017-06-26T20:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_browser -->
+      </class> <!-- com.selenium.UtilityFiles.AddCustomerGroups -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

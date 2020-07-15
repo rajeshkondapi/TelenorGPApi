@@ -1,0 +1,44 @@
+{
+	"store":{
+		"book":[{
+			"category": "reference",
+			"author":"Rajesh",
+			"location": "Hyderabad",
+			"price":10
+			
+			},
+			{			
+                        "category": "fiction",
+			"author":"barath",
+			"location": "Bangalore",
+			"price":20
+			},
+			{			
+                "category": "Action",
+			"author":"Naveen",
+			"price":30
+			},
+			{			
+                        "category": "Thriller",
+			"author":"Junaid",
+			"price":40
+			}],
+		"bicyle":{
+			"color":"red",
+			"price":50
+			}
+			},
+	"expences":10
+}
+
+
+$..author 					-- To get all the authors
+$.store.book[0].author  ---  to 1st array author name
+$.store.book[*].author ----  to get all the authors using hashtrick
+$.store.book[1]      ---- to get all the details of book 1
+$.store.book[0,1].price ----  first two prices of books
+$.store.book[?(@.location)]  --- get the details which has location
+$.store.book[-1:]   ---- get all the details from below
+$.store.book[1:]   ---  get all the details after first array
+$.store.book[?(@.category = "reference")]  --  get all the details which has category as reference
+$.store.book[?(@.price > 20)]   ---- get all book details whose price is > 20 

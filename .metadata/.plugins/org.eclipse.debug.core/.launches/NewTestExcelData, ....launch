@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.testng.eclipse.launchconfig">
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.testng.remote.RemoteTestNG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="TestFrameWork"/>
+<mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
+<mapEntry key="ExcelDatadropdown.NewTestExcelData" value=""/>
+<mapEntry key="beanRelated.ServicecentralBean" value=""/>
+<mapEntry key="beanRelated.TestExcelDropDown" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral10" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral11" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral12" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral13" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral14" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral15" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral16" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral17" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral18" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral19" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral20" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral21" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral22" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral23" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral24" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral25" value=""/>
+<mapEntry key="serviceCentralPkg.ServiceCentral9" value=""/>
+<mapEntry key="serviceCentralPkg.ex" value=""/>
+<mapEntry key="sqlpackage.sqlconnector" value=""/>
+</mapAttribute>
+<listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
+<listEntry value="serviceCentralPkg.ServiceCentral24"/>
+<listEntry value="serviceCentralPkg.ServiceCentral"/>
+<listEntry value="serviceCentralPkg.ServiceCentral18"/>
+<listEntry value="serviceCentralPkg.ServiceCentral19"/>
+<listEntry value="serviceCentralPkg.ServiceCentral25"/>
+<listEntry value="serviceCentralPkg.ex"/>
+<listEntry value="serviceCentralPkg.ServiceCentral22"/>
+<listEntry value="serviceCentralPkg.ServiceCentral16"/>
+<listEntry value="serviceCentralPkg.ServiceCentral23"/>
+<listEntry value="serviceCentralPkg.ServiceCentral17"/>
+<listEntry value="sqlpackage.sqlconnector"/>
+<listEntry value="serviceCentralPkg.ServiceCentral9"/>
+<listEntry value="beanRelated.ServicecentralBean"/>
+<listEntry value="serviceCentralPkg.ServiceCentral11"/>
+<listEntry value="serviceCentralPkg.ServiceCentral12"/>
+<listEntry value="serviceCentralPkg.ServiceCentral10"/>
+<listEntry value="serviceCentralPkg.ServiceCentral15"/>
+<listEntry value="ExcelDatadropdown.NewTestExcelData"/>
+<listEntry value="beanRelated.TestExcelDropDown"/>
+<listEntry value="serviceCentralPkg.ServiceCentral21"/>
+<listEntry value="serviceCentralPkg.ServiceCentral13"/>
+<listEntry value="serviceCentralPkg.ServiceCentral14"/>
+<listEntry value="serviceCentralPkg.ServiceCentral20"/>
+</listAttribute>
+<booleanAttribute key="org.testng.eclipse.DEBUG" value="false"/>
+<listAttribute key="org.testng.eclipse.GROUP_LIST"/>
+<listAttribute key="org.testng.eclipse.GROUP_LIST_CLASS"/>
+<stringAttribute key="org.testng.eclipse.LOG_LEVEL" value="2"/>
+<listAttribute key="org.testng.eclipse.METHOD_TEST_LIST"/>
+<listAttribute key="org.testng.eclipse.PACKAGE_TEST_LIST"/>
+<stringAttribute key="org.testng.eclipse.PRE_DEFINED_LISTENERS" value=""/>
+<stringAttribute key="org.testng.eclipse.PROTOCOL" value="json"/>
+<listAttribute key="org.testng.eclipse.SUITE_TEST_LIST">
+<listEntry value="testngServiceCentral.xml"/>
+</listAttribute>
+<intAttribute key="org.testng.eclipse.TYPE" value="3"/>
+<booleanAttribute key="org.testng.eclipse.VERBOSE" value="false"/>
+</launchConfiguration>

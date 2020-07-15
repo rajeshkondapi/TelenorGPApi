@@ -1,0 +1,16 @@
+package test_automation_webdriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ServiceCentral {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.gecko.driver", "E:\\library sel\\geckodriver.exe");
+		WebDriver Wbd = new FirefoxDriver();
+		Wbd.get("http://servicecentral.sagarsoft.com/");
+		
+		
+	}
+
+}

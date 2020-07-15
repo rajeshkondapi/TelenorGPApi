@@ -1,0 +1,21 @@
+package test_automation_webdriver;
+
+public class TestJS {
+
+	public static void main(String[] args) {
+		WebDriver driver;
+
+		@Test
+		public void testClickJS() throws Exception {
+			driver = new FirefoxDriver();
+			driver.manage().window().maximize();
+			driver.navigate().to("http://www.amazon.com/");
+			WebElement searchTextBox=driver.findElement(By.id("twotabsearchtextbox"));
+			searchTextBox.sendKeys("Mobiles");
+			WebElement goButton = driver.findElement(By.cssSelector("input[value=Go]"));
+			safeJavaScriptClick(goButton);
+		}
+
+	}
+
+}

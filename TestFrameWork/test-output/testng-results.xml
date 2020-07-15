@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="130472" started-at="2017-12-27T10:11:07Z" finished-at="2017-12-27T10:13:18Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="130472" started-at="2017-12-27T10:11:07Z" finished-at="2017-12-27T10:13:18Z">
+      <class name="serviceCentralPkg.ServiceCentral13">
+        <test-method status="PASS" signature="f1()[pri:0, instance:serviceCentralPkg.ServiceCentral13@6767c1fc]" name="f1" duration-ms="130142" started-at="2017-12-27T15:41:07Z" finished-at="2017-12-27T15:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:serviceCentralPkg.ServiceCentral13@6767c1fc]" name="afterClass" is-config="true" duration-ms="294" started-at="2017-12-27T15:43:18Z" finished-at="2017-12-27T15:43:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- serviceCentralPkg.ServiceCentral13 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
