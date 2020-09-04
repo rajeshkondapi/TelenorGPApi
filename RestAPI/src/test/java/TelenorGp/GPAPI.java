@@ -63,6 +63,7 @@ public class GPAPI extends EmailReport {
 
 			// Unsubscription body update
 
+			
 			if (apiMethod.equalsIgnoreCase("Unsubscribe") || apiMethod.equalsIgnoreCase("De-activate Subscriber") || apiMethod.equalsIgnoreCase("De-activate Subscriber1")) {
 
 				jsonObject.getAsJsonObject("subscriptionInfo").remove("subscriptionId");
