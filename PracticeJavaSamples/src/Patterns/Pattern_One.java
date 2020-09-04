@@ -48,7 +48,7 @@ static void pattern4() {
 	char ch = '*';
 	for(int i=1; i<=10; i++) {
 		for(int j=1; j<=i; j++) {
-			System.out.printf("%3C", ch);				
+			System.out.printf("%10C", ch);				
 		}
 		
 		System.out.println();
@@ -59,7 +59,7 @@ static void pattern4() {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		pattern4();
+		pattern3();
 		System.out.println();
 		//pattern2();
 		System.out.println();

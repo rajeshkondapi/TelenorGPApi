@@ -51,6 +51,7 @@ public class GPAPI extends EmailReport {
 		List<String> activsub = new ArrayList<>();
 		HSSFWorkbook apimethods_wb = Exceel();
 		HSSFSheet apisheet = apimethods_wb.getSheet("ApiMethods");
+
 		for (int i = 1; i < apisheet.getPhysicalNumberOfRows(); i++) {
 			String apiMethod = apisheet.getRow(i).getCell(0).getStringCellValue().trim();
 			System.out.println("apimethds ==" + apiMethod);
@@ -62,21 +63,23 @@ public class GPAPI extends EmailReport {
 
 			// Unsubscription body update
 
-			if (apiMethod.equalsIgnoreCase("Unsubscribe") || apiMethod.equalsIgnoreCase("De-activate Subscriber")) {
+			if (apiMethod.equalsIgnoreCase("Unsubscribe") || apiMethod.equalsIgnoreCase("De-activate Subscriber") || apiMethod.equalsIgnoreCase("De-activate Subscriber1")) {
 
 				jsonObject.getAsJsonObject("subscriptionInfo").remove("subscriptionId");
-				jsonObject.getAsJsonObject("subscriptionInfo").addProperty("subscriptionId", (activsub != null && !activsub.isEmpty()) ? activsub.get(0) : "");
-						
+				//System.out.println("SubscrptionId = " + activsub.get(0));
+				jsonObject.getAsJsonObject("subscriptionInfo").addProperty("subscriptionId",
+						(activsub != null && !activsub.isEmpty()) ? activsub.get(0) : "");
+				
+				
 			}
 
 			// DC Charge OTP body Update
-			
 
 			if (apiMethod.equalsIgnoreCase("DC_chargeOTP") || apiMethod.equalsIgnoreCase("Part_ChargeOTP")) {
 
 				jsonObject.getAsJsonObject("accesInfo").remove("transactionPIN");
 				jsonObject.getAsJsonObject("accesInfo").remove("otpTransactionId");
-				System.out.println("DC Push GTRID = " + activsub.get(0));
+				//System.out.println("DC Push GTRID = " + activsub.get(0));
 				jsonObject.getAsJsonObject("accesInfo").addProperty("otpTransactionId",
 						(activsub != null && !activsub.isEmpty()) ? activsub.get(0) : "");
 				System.out.println("DC OTP = " + otpget.get(0));
@@ -102,7 +105,7 @@ public class GPAPI extends EmailReport {
 
 				System.out.println("after change == " + jsonObject);
 
-				String url = apisheet.getRow(i).getCell(2).getStringCellValue().trim();
+				String url = apisheet.getRow(i).getCell(2).getStringCellValue();
 				System.out.println(url);
 				Response respactivate = given().when().contentType(ContentType.JSON).body(jsonObject.toString())
 						.post(url);
@@ -160,8 +163,7 @@ public class GPAPI extends EmailReport {
 					apisheet.getRow(i).createCell(3).setCellValue(serverbatchReferenceCode);
 				}
 
-				if (apiMethod.equalsIgnoreCase("Activate Subscriber")) {
-					activsub.clear();
+				if (apiMethod.equalsIgnoreCase("Activate Subscriber") || apiMethod.equalsIgnoreCase("Activate Subscriber1")) {
 					if (StatusCode.equals("200")) {
 						String ActivateSubscriptionId = respactivate.body().jsonPath()
 								.get("subscriptionInfo.subscriptionId");
@@ -198,11 +200,11 @@ public class GPAPI extends EmailReport {
 
 				}
 
-				if (apiMethod.equalsIgnoreCase("pushalertsms") && StatusCode.equalsIgnoreCase("200")) {
+				if ((apiMethod.equalsIgnoreCase("pushalertsms") && StatusCode.equalsIgnoreCase("200")) || (apiMethod.equalsIgnoreCase("pushalertsms without charge") && StatusCode.equalsIgnoreCase("200"))) {
 					Thread.sleep(3000);
 					activsub.clear();
 					queries.clear();
-					queries.add("SELECT tid FROM digitalservicestrans.usm_push_service_alert_process WHERE gtrid=");
+					queries.add("SELECT tid FROM imidigital_sub_alerts.usm_push_service_alert_process WHERE gtrid=");
 					String smsgtrid1 = apisheet.getRow(i).getCell(3).getStringCellValue().trim();
 					System.out.println("SmsGtrid = " + smsgtrid1);
 					activsub.add(smsgtrid1);
@@ -211,7 +213,7 @@ public class GPAPI extends EmailReport {
 					activsub.clear();
 					queries.clear();			
 					otpget.get(0);
-					queries.add("SELECT new_gtrid FROM digitalservicestrans.usm_alert_data_process_trans0 WHERE tid ='"
+					queries.add("SELECT new_gtrid FROM imidigital_sub_alerts.usm_alert_data_process_trans6 WHERE tid ='"
 							+ otpget.get(0) + "'AND gtrid = ");
 
 					Map<String, Object> allTablesData2 = db(apiMethod, smsgtrid1, queries);
@@ -231,11 +233,11 @@ public class GPAPI extends EmailReport {
 					
 					} 
 				
-				if (apiMethod.equalsIgnoreCase("groupsms") && StatusCode.equalsIgnoreCase("200")) {
+				if ((apiMethod.equalsIgnoreCase("groupsms") && StatusCode.equalsIgnoreCase("200")) || (apiMethod.equalsIgnoreCase("groupsms without charge") && StatusCode.equalsIgnoreCase("200"))) {
 					Thread.sleep(3000);
 					activsub.clear();
 					queries.clear();
-					queries.add("SELECT new_gtrid FROM digitalservicestrans.usm_alert_data_process_trans0 WHERE gtrid=");
+					queries.add("SELECT new_gtrid FROM imidigital_sub_alerts.usm_alert_data_process_trans6 WHERE gtrid=");
 					String smsgtrid2 = apisheet.getRow(i).getCell(3).getStringCellValue().trim();
 					System.out.println("SmsGtrid = " + smsgtrid2);
 					activsub.add(smsgtrid2);
@@ -364,11 +366,12 @@ public class GPAPI extends EmailReport {
 			for (int k = 1; k < dbqueries.getPhysicalNumberOfRows(); k++) {
 				HSSFRichTextString dbethd = dbqueries.getRow(k).getCell(0).getRichStringCellValue();
 				if (apiMethod.equalsIgnoreCase(dbethd.getString())) {
-					String query = dbqueries.getRow(k).getCell(2).getStringCellValue();
+				//	String query = dbqueries.getRow(k).getCell(2).getStringCellValue();
+					String query = dbqueries.getRow(k).getCell(2).toString();
 					queries.add(query);
 				}
 			}
-			if (apiMethod.equalsIgnoreCase("pushalertsms") || apiMethod.equalsIgnoreCase("groupsms") ) {
+			if (apiMethod.equalsIgnoreCase("pushalertsms") || apiMethod.equalsIgnoreCase("groupsms") || apiMethod.equalsIgnoreCase("groupsms without charge") || apiMethod.equalsIgnoreCase("pushalertsms without charge")) {
 				// logger = extent.startTest(apiMethod+" DB Details", "DPDP-GP-DB Details");
 
 				//String log = dbqueries.getRow(i).getCell(1).getStringCellValue();
@@ -478,7 +481,6 @@ public class GPAPI extends EmailReport {
 		Writer writer = new OutputStreamWriter(outputStream);
 		writer.write(fileContent);
 		writer.close();
-		
 
 	}
 
@@ -492,27 +494,16 @@ public class GPAPI extends EmailReport {
 
 		String now = getDate();
 		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/Report.html", true);
-		// System.out.println(extent);
-		// ExtentReports f1 =new ExtentReports (System.getProperty("user.dir")
-		// +"/test-output/"+now+".html", true);
-		// emailgen(System.getProperty("user.dir") +"/test-output/"+now+".html");
 		extent.addSystemInfo("Host Name", "DPDP GP API's").addSystemInfo("Environment", "API Automation - Rest Assured")
 				.addSystemInfo("User Name", "DPDP");
-		// loading the external xml file (i.e., extent-config.xml) which was placed
-		// under the base directory
-		// You could find the xml file below. Create xml file in your project and copy
-		// past the code mentioned below
 		extent.loadConfig(new File(System.getProperty("user.dir") + "\\extent-config.xml"));
 	}
 
 	@AfterTest(timeOut = 5000)
 	public void tearDown() throws MessagingException, DocumentException, Exception {	
-		
 		extent.flush();
 		
 
 	}
-	
-	
 
 }
