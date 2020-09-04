@@ -62,7 +62,7 @@ public class GPAPI extends EmailReport {
 			JsonObject jsonObject = gson.fromJson(Req_body, JsonObject.class);
 
 			// Unsubscription body update
-
+// latest code
 			
 			if (apiMethod.equalsIgnoreCase("Unsubscribe") || apiMethod.equalsIgnoreCase("De-activate Subscriber") || apiMethod.equalsIgnoreCase("De-activate Subscriber1")) {
 
