@@ -11,6 +11,7 @@ public class Expe {
 			for(int j=0;j<arr.length;j++) {
 				if(arr1[i] == arr[j]) {				
 					System.out.println("duplicates elements are ="+arr1[i]);
+					//System.out.println("duplicates elements are ="+arr[j]);
 				}
 			}
 		}

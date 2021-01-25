@@ -50,7 +50,7 @@ DPDP API Report
 <i class='mdi-hardware-desktop-windows'></i>
 </li>
 <li>
-<span class='suite-started-time'>2020-02-20 16:30:09</span>
+<span class='suite-started-time'>2020-10-23 18:23:39</span>
 </li>
 <li>
 <span>v2.40.2</span>
@@ -80,25 +80,25 @@ DPDP API Report
 <div class='col l2 m4 s12'>
 <div class='card suite-total-time-current'> 
 <span class='panel-name'>Total Time Taken (Current Run)</span> 
-<span class='suite-total-time-current-value panel-lead'>0h 1m 19s+483ms</span> 
+<span class='suite-total-time-current-value panel-lead'>0h 0m 2s+647ms</span> 
 </div> 
 </div>
 <div class='col l2 m4 s12'>
 <div class='card suite-total-time-overall'> 
 <span class='panel-name'>Total Time Taken (Overall)</span> 
-<span class='suite-total-time-overall-value panel-lead'>0h 1m 19s+483ms</span> 
+<span class='suite-total-time-overall-value panel-lead'>0h 0m 2s+647ms</span> 
 </div> 
 </div>
 <div class='col l2 m4 s6 suite-start-time'>
 <div class='card accent green-accent'> 
 <span class='panel-name'>Start</span> 
-<span class='panel-lead suite-started-time'>2020-02-20 16:28:50</span> 
+<span class='panel-lead suite-started-time'>2020-10-23 18:23:37</span> 
 </div> 
 </div>
 <div class='col l2 m4 s6 suite-end-time'>
 <div class='card accent pink-accent'> 
 <span class='panel-name'>End</span> 
-<span class='panel-lead suite-ended-time'>2020-02-20 16:30:09</span> 
+<span class='panel-lead suite-ended-time'>2020-10-23 18:23:39</span> 
 </div> 
 </div>
 </div>
@@ -173,7 +173,7 @@ DPDP API Report
 </tr>
 <tr>
 <td>Java Version</td>
-<td>1.8.0_241</td>
+<td>1.8.0_261</td>
 </tr>
 <tr>
 <td>Environment</td>
@@ -230,19 +230,19 @@ DPDP API Report
 <div class='card-panel no-padding-h no-padding-v no-margin-v'>
 <div class='wrapper'>
 <ul id='test-collection' class='test-collection'>
-<li class='collection-item test displayed active pass ' extentid='f007180c-5e55-4be4-957d-138964910163'>
+<li class='collection-item test displayed active pass ' extentid='bab11f22-49e4-4011-9317-a1606fd8f723'>
 <div class='test-head'>
-<span class='test-name'>Register Subscriber </span>
+<span class='test-name'>MONGO </span>
 <span class='test-status label right outline capitalize pass'>pass</span>
 <span class='category-assigned hide '></span>
 </div>
 <div class='test-body'>
 <div class='test-info'>
-<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-02-20 16:28:56</span>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-10-23 18:23:37</span>
 <span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
 <span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
 </div>
-<div class='test-desc'>Description to DPDP GP API Methods</div>
+<div class='test-desc'>MONGO Check</div>
 <div class='test-attributes'>
 </div>
 <div class='test-steps'>
@@ -257,363 +257,8 @@ DPDP API Report
 <tbody>
 <tr>
 <td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:56</td>
-<td class='step-details'>Request URL == http://10.21.11.50:9091/digital5crm/subscription/v5.0/registersubscriber</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:56</td>
-<td class='step-details'>Response Header == Connection=keep-alive
-X-Powered-By=Undertow/1
-Server=WildFly/9
-Transfer-Encoding=chunked
-Content-Type=text/plain
-Date=Thu, 20 Feb 2020 10:58:55 GMT</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:56</td>
-<td class='step-details'>Request Body == {"accesInfo":{"accesskey":"d5a3f90c062248a7be17e4deed14b23e","endUserId":"8801307257910","accesschannel":"CRM","referenceCode":"1837948044183794804423862"},"charge":{"serviceIdentifier":"SUB00010201205","code":"SUB0001020120519411527"}}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:56</td>
-<td class='step-details'>API Status Code for Register Subscriber == 200</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:56</td>
-<td class='step-details'>API Response for Register Subscriber =={"statusInfo":{"statusCode":"200","referenceCode":"1837948044183794804423862","serverReferenceCode":"5512111501582196335168951"},"subscriptionInfo":{"subscriptionId":"5502111501581934009091459","productIdentifier":"1452","serviceIdentifier":"SUB00010201205","subscriptionStatus":"0","validity":"1"}}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:58</td>
-<td class='step-details'>Mongo Collection :  {"_id": "8801307257910", "subscriber": {"msisdn": "8801307257910", "state": 1, "createdOn": "2020-02-17 16:06:31.574", "updatedOn": "2020-02-19 11:19:41.777", "lbChargeCode": "", "lbSid": -1, "opid": 470001, "active_sids": [], "userType": 1, "profileId": "5512111501581933991550918", "imsi": "", "vmsisdn": "576802471981345554", "userClass": "", "imei": "", "uaprofile": "", "naDate": "", "fname": "", "lname": "", "language": "", "gender": "", "email": "", "birthDate": "", "nationality": "", "loginId": "", "password": "", "loginStatus": -1, "lastLogonDate": "", "employeeFlag": -1, "dndflag": false, "segmentList": [], "blackList": false, "inactiveSids": [1205, 1315], "lastBilledOn": "", "lastChargedProductid": -1, "lastChargingStatus": -1, "biometricRegStatus": 1, "tg": {}, "blklstrsn": "", "phoneId": "", "hardLinkId": "", "userId": "", "chnlDND": {}}, "subscriptions": [{"subsId": "5502111501581934009091459", "state": 0, "createdOn": "2020-02-17 16:06:49.131", "updatedOn": "2020-02-20 16:58:55.241", "regOn": "2020-02-20 16:58:55.241", "regChannel": "crm", "regTid": "5512111501582196335168951", "regPeriod": 1, "giftedBy": -1, "renewedOn": "", "renewalType": -1, "nextRenewal": "2020-02-19 16:06:49.131", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1452, "opid": -1, "cCode": "SUB0001020120519411527", "lbPrice": 100, "serviceId": 1205, "actOn": "2020-02-17 16:08:42.796", "actChannel": "crm", "actTid": "5512111501581934122743919", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "2020-02-17 16:08:44.997", "unsubChannel": "mtsms", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5512111501581934122743919", "priority": 1, "reqChrgCode": "SUB0001020120519411527", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010201205", "rightId": "", "skuCode": "", "lbDate": "2020-02-17 16:08:42.796"}, {"subsId": "5512111501581943593976922", "state": 1, "createdOn": "2020-02-17 18:46:34.064", "updatedOn": "2020-02-19 10:00:01.782", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "2020-02-19 10:00:01", "renewalType": -1, "nextRenewal": "2020-02-20 18:46:34.064", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1569, "opid": -1, "cCode": "SUB000100013271911271537", "lbPrice": 100, "serviceId": 1327, "actOn": "2020-02-17 18:46:34.064", "actChannel": "crm", "actTid": "5512111501581943593976922", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "", "unsubChannel": "", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "7732111511582084800628057", "priority": 1, "reqChrgCode": "SUB000100013271911271537", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010001327", "rightId": "", "skuCode": "", "lbDate": ""}, {"subsId": "5522111501582040795985003", "state": 1, "createdOn": "2020-02-18 21:46:36.272", "updatedOn": "2020-02-19 11:20:16.65", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "", "renewalType": -1, "nextRenewal": "2020-03-20 11:20:16.65", "validity": 30, "units": 0, "prerenewalState": -1, "productId": 1551, "opid": -1, "cCode": "SUB000407013151911191149", "lbPrice": 100, "serviceId": 1315, "actOn": "2020-02-19 11:20:16.65", "actChannel": "ussd", "actTid": "5522111501582089616449032", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "2020-02-19 11:19:41.784", "unsubChannel": "ussd", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5522111501582089616449032", "priority": 1, "reqChrgCode": "SUB000407013151911191149", "autoRenewal": false, "planDuration": 30, "actSCode": "", "srvcCode": "SUB00040701315", "rightId": "", "skuCode": "", "lbDate": "2020-02-19 11:20:16.65"}, {"subsId": "5512111501582196252660950", "state": 1, "createdOn": "2020-02-20 16:57:32.86", "updatedOn": "2020-02-20 16:57:32.86", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "", "renewalType": 0, "nextRenewal": "2020-02-21 16:57:32.86", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1621, "opid": -1, "cCode": "SUB00010001390201271523", "lbPrice": 100, "serviceId": 1390, "actOn": "2020-02-20 16:57:32.86", "actChannel": "crm", "actTid": "5512111501582196252660950", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "", "unsubChannel": "", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5512111501582196252660950", "priority": 1, "reqChrgCode": "SUB00010001390201271523", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010001390", "rightId": "", "skuCode": "", "lbDate": ""}]}</td>
-</tr>
-</tbody>
-</table>
-<ul class='collapsible node-list' data-collapsible='accordion'>
-</ul>
-</div>
-</div>
-</li>
-<li class='collection-item test displayed active pass ' extentid='c31ed436-874b-4aed-bfb2-605eaf48bcf9'>
-<div class='test-head'>
-<span class='test-name'>Activate Subscriber </span>
-<span class='test-status label right outline capitalize pass'>pass</span>
-<span class='category-assigned hide '></span>
-</div>
-<div class='test-body'>
-<div class='test-info'>
-<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-02-20 16:28:59</span>
-<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
-</div>
-<div class='test-desc'>Description to DPDP GP API Methods</div>
-<div class='test-attributes'>
-</div>
-<div class='test-steps'>
-<table class='bordered table-results'>
-<thead>
-<tr>
-<th>Status</th>
-<th>Timestamp</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:59</td>
-<td class='step-details'>Request URL == http://10.21.11.50:9091/digital5crm/subscription/v5.0/activate</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:59</td>
-<td class='step-details'>Response Header == Connection=keep-alive
-X-Powered-By=Undertow/1
-Server=WildFly/9
-Transfer-Encoding=chunked
-Content-Type=text/plain
-Date=Thu, 20 Feb 2020 10:58:59 GMT</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:59</td>
-<td class='step-details'>Request Body == {"accesInfo":{"accesskey":"d5a3f90c062248a7be17e4deed14b23e","endUserId":"8801307257910","accesschannel":"CRM","referenceCode":"1411368284141136828471398"},"charge":{"serviceIdentifier":"SUB00010201205","code":"SUB0001020120519411527","autorenewalFlag":"1","chargeUserFlag":"1"}}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:59</td>
-<td class='step-details'>API Status Code for Activate Subscriber == 200</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:28:59</td>
-<td class='step-details'>API Response for Activate Subscriber =={"statusInfo":{"totalAmountCharged":"1.00","statusCode":"200","referenceCode":"1411368284141136828471398","serverReferenceCode":"5512111501582196339217952"},"subscriptionInfo":{"subscriptionId":"5502111501581934009091459","productIdentifier":"1452","serviceIdentifier":"SUB00010201205","subscriptionStatus":"1","validity":"1","nextRenewalDate":"2020-02-21 16:58:59.269"}}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:00</td>
-<td class='step-details'>Mongo Collection :  {"_id": "8801307257910", "subscriber": {"msisdn": "8801307257910", "state": 1, "createdOn": "2020-02-17 16:06:31.574", "updatedOn": "2020-02-19 11:19:41.777", "lbChargeCode": "", "lbSid": -1, "opid": 470001, "active_sids": [], "userType": 1, "profileId": "5512111501581933991550918", "imsi": "", "vmsisdn": "576802471981345554", "userClass": "", "imei": "", "uaprofile": "", "naDate": "", "fname": "", "lname": "", "language": "", "gender": "", "email": "", "birthDate": "", "nationality": "", "loginId": "", "password": "", "loginStatus": -1, "lastLogonDate": "", "employeeFlag": -1, "dndflag": false, "segmentList": [], "blackList": false, "inactiveSids": [1205, 1315], "lastBilledOn": "", "lastChargedProductid": -1, "lastChargingStatus": -1, "biometricRegStatus": 1, "tg": {}, "blklstrsn": "", "phoneId": "", "hardLinkId": "", "userId": "", "chnlDND": {}}, "subscriptions": [{"subsId": "5502111501581934009091459", "state": 1, "createdOn": "2020-02-17 16:06:49.131", "updatedOn": "2020-02-20 16:58:59.269", "regOn": "2020-02-20 16:58:55.241", "regChannel": "crm", "regTid": "5512111501582196335168951", "regPeriod": 1, "giftedBy": -1, "renewedOn": "", "renewalType": -1, "nextRenewal": "2020-02-21 16:58:59.269", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1452, "opid": -1, "cCode": "SUB0001020120519411527", "lbPrice": 100, "serviceId": 1205, "actOn": "2020-02-20 16:58:59.269", "actChannel": "crm", "actTid": "5512111501582196339217952", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "2020-02-17 16:08:44.997", "unsubChannel": "mtsms", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5512111501582196339217952", "priority": 1, "reqChrgCode": "SUB0001020120519411527", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010201205", "rightId": "", "skuCode": "", "lbDate": "2020-02-20 16:58:59.269"}, {"subsId": "5512111501581943593976922", "state": 1, "createdOn": "2020-02-17 18:46:34.064", "updatedOn": "2020-02-19 10:00:01.782", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "2020-02-19 10:00:01", "renewalType": -1, "nextRenewal": "2020-02-20 18:46:34.064", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1569, "opid": -1, "cCode": "SUB000100013271911271537", "lbPrice": 100, "serviceId": 1327, "actOn": "2020-02-17 18:46:34.064", "actChannel": "crm", "actTid": "5512111501581943593976922", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "", "unsubChannel": "", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "7732111511582084800628057", "priority": 1, "reqChrgCode": "SUB000100013271911271537", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010001327", "rightId": "", "skuCode": "", "lbDate": ""}, {"subsId": "5522111501582040795985003", "state": 1, "createdOn": "2020-02-18 21:46:36.272", "updatedOn": "2020-02-19 11:20:16.65", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "", "renewalType": -1, "nextRenewal": "2020-03-20 11:20:16.65", "validity": 30, "units": 0, "prerenewalState": -1, "productId": 1551, "opid": -1, "cCode": "SUB000407013151911191149", "lbPrice": 100, "serviceId": 1315, "actOn": "2020-02-19 11:20:16.65", "actChannel": "ussd", "actTid": "5522111501582089616449032", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "2020-02-19 11:19:41.784", "unsubChannel": "ussd", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5522111501582089616449032", "priority": 1, "reqChrgCode": "SUB000407013151911191149", "autoRenewal": false, "planDuration": 30, "actSCode": "", "srvcCode": "SUB00040701315", "rightId": "", "skuCode": "", "lbDate": "2020-02-19 11:20:16.65"}, {"subsId": "5512111501582196252660950", "state": 1, "createdOn": "2020-02-20 16:57:32.86", "updatedOn": "2020-02-20 16:57:32.86", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "", "renewalType": 0, "nextRenewal": "2020-02-21 16:57:32.86", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1621, "opid": -1, "cCode": "SUB00010001390201271523", "lbPrice": 100, "serviceId": 1390, "actOn": "2020-02-20 16:57:32.86", "actChannel": "crm", "actTid": "5512111501582196252660950", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "", "unsubChannel": "", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5512111501582196252660950", "priority": 1, "reqChrgCode": "SUB00010001390201271523", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010001390", "rightId": "", "skuCode": "", "lbDate": ""}]}</td>
-</tr>
-</tbody>
-</table>
-<ul class='collapsible node-list' data-collapsible='accordion'>
-</ul>
-</div>
-</div>
-</li>
-<li class='collection-item test displayed active pass ' extentid='1152bad4-3c25-439d-8f25-73cdd48943ee'>
-<div class='test-head'>
-<span class='test-name'>De-activate Subscriber </span>
-<span class='test-status label right outline capitalize pass'>pass</span>
-<span class='category-assigned hide '></span>
-</div>
-<div class='test-body'>
-<div class='test-info'>
-<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-02-20 16:29:01</span>
-<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
-</div>
-<div class='test-desc'>Description to DPDP GP API Methods</div>
-<div class='test-attributes'>
-</div>
-<div class='test-steps'>
-<table class='bordered table-results'>
-<thead>
-<tr>
-<th>Status</th>
-<th>Timestamp</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:01</td>
-<td class='step-details'>Request URL == http://10.21.11.50:9091/digital5crm/subscription/v5.0/deactivate</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:01</td>
-<td class='step-details'>Response Header == Connection=keep-alive
-X-Powered-By=Undertow/1
-Server=WildFly/9
-Transfer-Encoding=chunked
-Content-Type=text/plain
-Date=Thu, 20 Feb 2020 10:59:00 GMT</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:01</td>
-<td class='step-details'>Request Body == {"accesInfo":{"accesskey":"d5a3f90c062248a7be17e4deed14b23e","endUserId":"8801307257910","accesschannel":"CRM","referenceCode":"1891629458189162945819295"},"subscriptionInfo":{"serviceIdentifier":"SUB00010201205","productIdentifier":"1452","subscriptionId":"5502111501581934009091459"}}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:01</td>
-<td class='step-details'>API Status Code for De-activate Subscriber == 200</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:01</td>
-<td class='step-details'>API Response for De-activate Subscriber =={"statusInfo":{"statusCode":"200","referenceCode":"1891629458189162945819295","serverReferenceCode":"5512111501582196340798953"},"subscriptionInfo":{"subscriptionId":"5502111501581934009091459","productIdentifier":"1452","serviceIdentifier":"SUB00010201205","subscriptionStatus":"11","validity":"1","nextRenewalDate":"2020-02-21 16:58:59.269"}}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:02</td>
-<td class='step-details'>Mongo Collection :  {"_id": "8801307257910", "subscriber": {"msisdn": "8801307257910", "state": 1, "createdOn": "2020-02-17 16:06:31.574", "updatedOn": "2020-02-20 16:59:00.886", "lbChargeCode": "", "lbSid": -1, "opid": 470001, "active_sids": [], "userType": 1, "profileId": "5512111501581933991550918", "imsi": "", "vmsisdn": "576802471981345554", "userClass": "", "imei": "", "uaprofile": "", "naDate": "", "fname": "", "lname": "", "language": "", "gender": "", "email": "", "birthDate": "", "nationality": "", "loginId": "", "password": "", "loginStatus": -1, "lastLogonDate": "", "employeeFlag": -1, "dndflag": false, "segmentList": [], "blackList": false, "inactiveSids": [1205, 1315], "lastBilledOn": "", "lastChargedProductid": -1, "lastChargingStatus": -1, "biometricRegStatus": 1, "tg": {}, "blklstrsn": "", "phoneId": "", "hardLinkId": "", "userId": "", "chnlDND": {}}, "subscriptions": [{"subsId": "5502111501581934009091459", "state": 11, "createdOn": "2020-02-17 16:06:49.131", "updatedOn": "2020-02-20 16:59:00.897", "regOn": "2020-02-20 16:58:55.241", "regChannel": "crm", "regTid": "5512111501582196335168951", "regPeriod": 1, "giftedBy": -1, "renewedOn": "", "renewalType": -1, "nextRenewal": "2020-02-21 16:58:59.269", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1452, "opid": -1, "cCode": "SUB0001020120519411527", "lbPrice": 100, "serviceId": 1205, "actOn": "2020-02-20 16:58:59.269", "actChannel": "crm", "actTid": "5512111501582196339217952", "consnetGwTid": "", "deregDate": "", "deactDate": "2020-02-20 16:59:00.897", "unsubDate": "2020-02-17 16:08:44.997", "unsubChannel": "crm", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5512111501582196339217952", "priority": 1, "reqChrgCode": "SUB0001020120519411527", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010201205", "rightId": "", "skuCode": "", "lbDate": "2020-02-20 16:58:59.269"}, {"subsId": "5512111501581943593976922", "state": 1, "createdOn": "2020-02-17 18:46:34.064", "updatedOn": "2020-02-19 10:00:01.782", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "2020-02-19 10:00:01", "renewalType": -1, "nextRenewal": "2020-02-20 18:46:34.064", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1569, "opid": -1, "cCode": "SUB000100013271911271537", "lbPrice": 100, "serviceId": 1327, "actOn": "2020-02-17 18:46:34.064", "actChannel": "crm", "actTid": "5512111501581943593976922", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "", "unsubChannel": "", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "7732111511582084800628057", "priority": 1, "reqChrgCode": "SUB000100013271911271537", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010001327", "rightId": "", "skuCode": "", "lbDate": ""}, {"subsId": "5522111501582040795985003", "state": 1, "createdOn": "2020-02-18 21:46:36.272", "updatedOn": "2020-02-19 11:20:16.65", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "", "renewalType": -1, "nextRenewal": "2020-03-20 11:20:16.65", "validity": 30, "units": 0, "prerenewalState": -1, "productId": 1551, "opid": -1, "cCode": "SUB000407013151911191149", "lbPrice": 100, "serviceId": 1315, "actOn": "2020-02-19 11:20:16.65", "actChannel": "ussd", "actTid": "5522111501582089616449032", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "2020-02-19 11:19:41.784", "unsubChannel": "ussd", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5522111501582089616449032", "priority": 1, "reqChrgCode": "SUB000407013151911191149", "autoRenewal": false, "planDuration": 30, "actSCode": "", "srvcCode": "SUB00040701315", "rightId": "", "skuCode": "", "lbDate": "2020-02-19 11:20:16.65"}, {"subsId": "5512111501582196252660950", "state": 1, "createdOn": "2020-02-20 16:57:32.86", "updatedOn": "2020-02-20 16:57:32.86", "regOn": "", "regChannel": "", "regTid": "", "regPeriod": 0, "giftedBy": -1, "renewedOn": "", "renewalType": 0, "nextRenewal": "2020-02-21 16:57:32.86", "validity": 1, "units": 0, "prerenewalState": -1, "productId": 1621, "opid": -1, "cCode": "SUB00010001390201271523", "lbPrice": 100, "serviceId": 1390, "actOn": "2020-02-20 16:57:32.86", "actChannel": "crm", "actTid": "5512111501582196252660950", "consnetGwTid": "", "deregDate": "", "deactDate": "", "unsubDate": "", "unsubChannel": "", "actRetryCount": 0, "renRetryCount": 0, "lcTid": "5512111501582196252660950", "priority": 1, "reqChrgCode": "SUB00010001390201271523", "autoRenewal": true, "planDuration": 1, "actSCode": "", "srvcCode": "SUB00010001390", "rightId": "", "skuCode": "", "lbDate": ""}]}</td>
-</tr>
-</tbody>
-</table>
-<ul class='collapsible node-list' data-collapsible='accordion'>
-</ul>
-</div>
-</div>
-</li>
-<li class='collection-item test displayed active fail ' extentid='ef9f8c57-6ff7-4250-aaa2-82a2358a5005'>
-<div class='test-head'>
-<span class='test-name'>Register Subscriber DB Details </span>
-<span class='test-status label right outline capitalize fail'>fail</span>
-<span class='category-assigned hide '></span>
-</div>
-<div class='test-body'>
-<div class='test-info'>
-<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-02-20 16:29:02</span>
-<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
-</div>
-<div class='test-desc'>DPDP-GP-DB Details</div>
-<div class='test-attributes'>
-</div>
-<div class='test-steps'>
-<table class='bordered table-results'>
-<thead>
-<tr>
-<th>Status</th>
-<th>Timestamp</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:19</td>
-<td class='step-details'>Data is Available for  Register Subscriber : SELECT * FROM gateway_logs_21.gw_api_trans_log WHERE trans_type='CRM_REG' AND gtrid='5512111501582196335168951' : {ivr_gtrid=, receivedtimestamp=2020-02-20 16:58:55.168000000, errordescription=, timetaken=91, originating_timestamp=2020-02-20 16:58:55.168000000, partnerip=203.199.178.211, id=19, partnerid=102, msisdn=8801307257910, errorcode=0, ivr_msc=, req={"accesInfo":{"serviceCode":"SUB00010201205","accesskey":"d5a3f90c062248a7be17e4deed14b23e","endUserId":"8801307257910","accesschannel":"CRM","referenceCode":"1837948044183794804423862","serverReferenceCode":"5512111501582196335168951","action":"registration","requestSource":"CRM","reqAction":"1"},"charge":{"code":"SUB0001020120519411527","serviceIdentifier":"SUB00010201205"},"transInfo":{"originatingTimestamp":"2020-02-20 16:58:55.168","transactionType":"CRM_REG"}}, trans_type=CRM_REG, gtrid=5512111501582196335168951, res={"statusInfo":{"statusCode":"200","referenceCode":"1837948044183794804423862","serverReferenceCode":"5512111501582196335168951"},"subscriptionInfo":{"subscriptionId":"5502111501581934009091459","productIdentifier":"1452","serviceIdentifier":"SUB00010201205","subscriptionStatus":"0","validity":"1"}}, ivr_sessionduration=, method=CRM_RegisterSubscriber, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:58:55, ivr_dtmf=, transaction_by_csr=0, partner_reference_code=1837948044183794804423862, apierrorcode=0, serviceid=SUB00010201205, sourcechannel=CRM, csr_info=0, ivr_incport=, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:20</td>
-<td class='step-details'>Data is Available for  Register Subscriber : SELECT * FROM gateway_logs_21.servicemgr_translog WHERE trans_type='CRM_REG' AND gtr_id='5512111501582196335168951' : {buid=2, requested_price=100, request={"accesInfo":{"reqAction":"1","endUserId":"8801307257910","accesskey":"d5a3f90c062248a7be17e4deed14b23e","serverReferenceCode":"5512111501582196335168951","serviceCode":"SUB00010201205","action":"registration","requestSource":"CRM","accesschannel":"CRM","referenceCode":"1837948044183794804423862"},"charge":{"code":"SUB0001020120519411527","serviceIdentifier":"SUB00010201205"},"transInfo":{"transactionType":"CRM_REG","originatingTimestamp":"2020-02-20 16:58:55.168"}}, node_ip=10.21.11.50, description=SKIPPING GETBAL FOR EXISTING USER||ACCEPTED, source=SM50, requested_charge_code=SUB0001020120519411527, sid=1205, duration=80, originating_timestamp=2020-02-20 16:58:55, action=registration, id=6, billed_price=100, msisdn=8801307257910, trans_type=CRM_REG, custermer_segment_id=0, transaction_start_time=2020-02-20 16:58:55, billed_charge_code=SUB0001020120519411527, transaction_end_time=2020-02-20 16:58:55, gtr_id=5512111501582196335168951, cor_id=1837948044183794804423862, created_on=2020-02-20 16:59:01, response={"statusInfo":{"endUserId":"8801307257910","totalAmountCharged":"1.00","serverReferenceCode":"5512111501582196335168951","pulseDuration":"0","statusText":"ACCEPTED","sessionId":"","referenceCode":"1837948044183794804423862","moNotifyFlag":0,"statusCode":"71000"},"subscriptionInfo":{"productIdentifier":"1452","subscriptionStatus":"0","nextRenewalDate":"2020-02-19 16:06:49.131","validity":"1","subscriptionId":"5502111501581934009091459","serviceIdentifier":"SUB00010201205"}}, evt_id=registration, error_code=71000, channel_id=crm, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:21</td>
-<td class='step-details'>Data is Available for  Register Subscriber : SELECT * FROM gateway_logs_21.subscription_manager_trans_logs WHERE current_subscription_status='0' AND  trans_type='CRM_REG' AND gtr_id='5512111501582196335168951' : {buid=2, requested_price=100, processing_time=18, node_ip=10.21.11.50, charge_code=SUB0001020120519411527, current_subscription_status=0, registered_on=2020-02-20 16:58:55.24, source=50, activation_channel=0, subscription_id=5502111501581934009091459, partner_id=102, registeration_channel=crm, originating_timestamp=2020-02-20 16:58:55.168000000, error_desc=, previous_subscriber_state=1, service_id=SUB00010201205, product_id=1452, id=2, msisdn=8801307257910, activated_on=0000-00-00 00:00:00, deactivation_channel=0, trans_type=CRM_REG, next_renewal_on=0000-00-00 00:00:00, transaction_source_channel=crm, deactivated_on=0000-00-00 00:00:00, transaction_type=registration, charge_price=100, gtr_id=5512111501582196335168951, previous_subscription_state=9, created_on=2020-02-20 16:58:55, bill_error_code=62200, error_code=71000, validity=0, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:22</td>
-<td class='step-details'>Data is Available for  Register Subscriber : SELECT * FROM gateway_logs_21.charging_gateway_trans_logs WHERE trans_type='CRM_REG' AND gtrid='5512111501582196335168951' : {requested_price=100, buid=2, tax_amount=22, discount_rule_id=0, charge_type=2, priceplan_id=1547, charged_price=100, opid=470001, charge_logic=1, pid=0, source=50, servicegroup=1038001, tid=7501911f-ba19-46f7-9009-b03c67f934e6, concurrent_hits=1, media_type=SUB, error_description=DIAMETER DEBIT SUCCESS, addon_service_id=0, product_id=SUB01, billingaccountid=0, action=1, dwn_credits_credited=0, media_id=0, id=2, pvalidity=0, retry_attempt_count=0, cyclecount=0, usp_dedited=0, agentid=0, d_service_ref_id=0, actid=0, nodeip=10.21.11.50, cgtrid=0, product_name=Automation_prod1, subscriber_type=1, created_on=2020-02-20 16:58:59, total_amount=122, agentname=0, tax_applied=1, error_code=2001, status=0, pulse_duration=0, extraparams={}, vendormediaid=0, status_code=62200, originationtype=MT, action_type=registration, charge_code=SUB0001020120519411527, dwn_credits_available=0, description=Request Processed Successfully, ptype=0, loyalty_credits=0, partner_id=102, api_request={"endUserId":"8801307257910","gtrId":"5512111501582196335168951","amount":100,"opId":"470001","extraParams":{"requested_price":"100","discount_rule_id":"0","charge_type":2,"productid":"SUB01","priceplan_id":"1547","channel":"crm","charge_logic":1,"pid":"0","source":"50","servicegroup":1038001,"media_type":"SUB","purchasecategorycode":"SUB","dwn_credits_credited":"0","pvalidity":"0","retry_attempt_count":"0","usp_dedited":"0","smppaccountid":"19352","messagelength":"0","product_name":"Automation_prod1","subscriber_type":"1","multipart":"0","taxinclusive":"false","clientcorrelator":"1837948044183794804423862","action_type":"registration","charge_code":"SUB0001020120519411527","dwn_credits_available":"0","ptype":"0","referencecode":"5512111501582196335168951","available_balance":100,"totalmessageparts":"0","loyalty_credits":"0","partner_id":"102","originating_timestamp":"2020-02-20 16:58:55.168","discount_applied":"0","dcs":"0","pulseDuration":"0","ptitle":"0","traffic_case":"20","trans_type":"CRM_REG","buId":"2","clanum":"267","onbehalfof":"IMImobile-C","discount_value":"0","requested_channel":"crm","dwn_credits_dedited":"0","sessionId":"","promo_id":"0","discount_mode":"0","discount_plan_id":"0","service_type":2,"product_type":"1","pulseRate":"0","consent_gw_tid":"0","serviceid":"SUB00010201205","pthumbnailurl":"0","remarks":"|Testservice1|Testservice1|","pdownloadurl":"0","usp_credited":"0"},"userType":"1"}, discount_applied=0, originating_timestamp=2020-02-20 16:58:55.168000000, content_type=0, vendorchannel=0, service_id=SUB00010201205, bparty=0, ptitle=0, debtamount=0, msisdn=8801307257910, ref_service_id=0, api_response={"gtrId":"5512111501582196335168951","responseText":"REQUEST PROCESSED","extraParams":{"accountId":"999000001000063682","accountBalanceChange":"290000","currentAccountBalance":"38043333","accountType":2000,"opId":"470001","vendorErrorCode":"2001"},"tid":"7501911f-ba19-46f7-9009-b03c67f934e6","responseCode":"62200","taxInfo":{"taxValue":"22","totalPrice":"122","statusCode":73000,"basePrice":"100"}}, trans_type=CRM_REG, gtrid=5512111501582196335168951, clanum=267, discount_value=0, requested_channel=crm, dwn_credits_dedited=0, transaction_timestamp=2020-02-20 16:58:55.217000000, promo_id=0, time_taken=21, discount_mode=0, discount_plan_id=0, trans_end_datetime=2020-02-20 16:58:55.238000000, service_type=2, product_type=1, cgw_instance_id=DIAMETER_4, pthumbnailurl=0, usp_credited=0, pdownloadurl=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:23</td>
-<td class='step-details'>Data is Available for  Register Subscriber : SELECT * FROM gateway_logs_21.diameter_trans_logs WHERE trans_type='CRM_REG' AND gtrid='5512111501582196335168951' : {requested_price=100, buid=2, diameteripport=10.21.11.51:9142, request={"endUserId":"8801307257910","gtrId":"5512111501582196335168951","amount":100,"opId":"470001","extraParams":{"requested_price":"100","discount_rule_id":"0","charge_type":2,"productid":"SUB01","priceplan_id":"1547","channel":"crm","charge_logic":1,"pid":"0","source":"50","servicegroup":1038001,"media_type":"SUB","purchasecategorycode":"SUB","dwn_credits_credited":"0","pvalidity":"0","retry_attempt_count":"0","usp_dedited":"0","smppaccountid":"19352","messagelength":"0","product_name":"Automation_prod1","subscriber_type":"1","multipart":"0","taxinclusive":"false","clientcorrelator":"1837948044183794804423862","action_type":"registration","charge_code":"SUB0001020120519411527","dwn_credits_available":"0","ptype":"0","referencecode":"5512111501582196335168951","available_balance":100,"totalmessageparts":"0","loyalty_credits":"0","partner_id":"102","originating_timestamp":"2020-02-20 16:58:55.168","discount_applied":"0","dcs":"0","pulseDuration":"0","ptitle":"0","traffic_case":"20","trans_type":"CRM_REG","buId":"2","clanum":"267","onbehalfof":"IMImobile-C","discount_value":"0","requested_channel":"crm","dwn_credits_dedited":"0","sessionId":"","promo_id":"0","discount_mode":"0","discount_plan_id":"0","service_type":2,"product_type":"1","pulseRate":"0","consent_gw_tid":"0","serviceid":"SUB00010201205","pthumbnailurl":"0","remarks":"|Testservice1|Testservice1|","pdownloadurl":"0","usp_credited":"0"},"userType":"1"}, status_code=62200, priceplan_id=1547, charge_code=SUB0001020120519411527, charged_price=100, in_account_id=43, description=Request Processed Successfully, source=50, available_balance=100, submit_status=0, tid=7501911f-ba19-46f7-9009-b03c67f934e6, concurrent_hits=1, partner_id=102, originating_timestamp=2020-02-20 16:58:55.168000000, media_type=SUB, error_description=DIAMETER DEBIT SUCCESS, service_id=SUB00010201205, product_id=SUB01, action=1, in_req_corrid=SIM_43.grameenphone.com;1582196335;10286, msisdn=8801307257910, in_res_corrid=0, trans_type=CRM_REG, gtrid=5512111501582196335168951, nodeip=10.21.11.50, transaction_timestamp=2020-02-20 16:58:55.218000000, product_name=Automation_prod1, time_taken=21, trans_end_datetime=2020-02-20 16:58:55.231000000, service_type=2, created_on=2020-02-20 16:58:57, response={"gtrId":"5512111501582196335168951","responseText":"REQUEST PROCESSED","extraParams":{"accountId":"999000001000063682","accountBalanceChange":"290000","currentAccountBalance":"38043333","accountType":2000,"opId":"470001","vendorErrorCode":"2001"},"tid":"7501911f-ba19-46f7-9009-b03c67f934e6","responseCode":"62200","taxInfo":{"taxValue":"22","totalPrice":"122","statusCode":73000,"basePrice":"100"}}, cgw_instance_id=DIAMETER_4, error_code=2001, status=0}</td>
-</tr>
-<tr>
-<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-<td class='timestamp'>16:29:24</td>
-<td class='step-details'>Failed to fetch data for =  Register Subscriber : SELECT * FROM gateway_logs_21.gw_mt_trans_log WHERE trans_type='CRM_REG' AND gtrid='5512111501582196335168951'</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:24</td>
-<td class='step-details'>Data is Available for  Register Subscriber : SELECT * FROM gateway_logs_21.gw_notify_trans_log WHERE trans_type='CRM_REG' AND gtrid='5512111501582196335168951' : {gtrid=5512111501582196335168951, retrycount=0, status_code=0, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:59:05, receivedtimestamp=2020-02-20 16:59:06, type=REG_SUC, message={"subscriptionInfo":{"productIdentifier":"1452","statusChangedDate":"2020-02-20 16:58:58","subscriptionStatus":"0","registrationDate":"2020-02-20 16:58:55.241","nextRenewalDate":"2020-02-19 16:06:49.131","validity":"1","subscriptionId":"5502111501581934009091459","activationDate":"2020-02-17 16:08:42.796","lastRenewalDate":"","lastChangedAmount":"1.00","serviceIdentifier":"SUB00010201205"},"accessInfo":{"endUserId":"576802471981345554","servicekey":"a1fb208d3f8b40c1992e70331ed2f1dc","language":"","referenceCode":"5512111501582196335168951","accesschannel":"crm"}}, url=http://10.21.11.51:7777/reqbin/values, errordescription=, timetaken=42, originating_timestamp=2020-02-20 16:58:55.168000000, response=|BatchCount:1|Code  : 200 OK text/plain; charset=utf-8 0, id=2, msisdn=, serviceid=SUB00010201205, errorcode=200, status=0, trans_type=CRM_REG}</td>
-</tr>
-</tbody>
-</table>
-<ul class='collapsible node-list' data-collapsible='accordion'>
-</ul>
-</div>
-</div>
-</li>
-<li class='collection-item test displayed active pass ' extentid='2c45ab4f-45f2-4372-9d12-c1366ea8bb58'>
-<div class='test-head'>
-<span class='test-name'>Activate Subscriber DB Details </span>
-<span class='test-status label right outline capitalize pass'>pass</span>
-<span class='category-assigned hide '></span>
-</div>
-<div class='test-body'>
-<div class='test-info'>
-<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-02-20 16:29:25</span>
-<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
-</div>
-<div class='test-desc'>DPDP-GP-DB Details</div>
-<div class='test-attributes'>
-</div>
-<div class='test-steps'>
-<table class='bordered table-results'>
-<thead>
-<tr>
-<th>Status</th>
-<th>Timestamp</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:41</td>
-<td class='step-details'>Data is Available for  Activate Subscriber : SELECT * FROM gateway_logs_21.gw_api_trans_log WHERE trans_type='CRM_ACT' AND gtrid='5512111501582196339217952' : {ivr_gtrid=, receivedtimestamp=2020-02-20 16:58:59.217000000, errordescription=, timetaken=67, originating_timestamp=2020-02-20 16:58:59.217000000, partnerip=203.199.178.211, id=20, partnerid=102, msisdn=8801307257910, errorcode=0, ivr_msc=, req={"charge":{"code":"SUB0001020120519411527","autorenewalFlag":1,"chargeUserFlag":1,"serviceIdentifier":"SUB00010201205"},"accesInfo":{"serviceCode":"SUB00010201205","accesskey":"d5a3f90c062248a7be17e4deed14b23e","endUserId":"8801307257910","accesschannel":"CRM","referenceCode":"1411368284141136828471398","serverReferenceCode":"5512111501582196339217952","action":"activation","requestSource":"CRM","reqAction":"1"},"transInfo":{"originatingTimestamp":"2020-02-20 16:58:59.217","transactionType":"CRM_ACT"}}, trans_type=CRM_ACT, gtrid=5512111501582196339217952, res={"statusInfo":{"totalAmountCharged":"1.00","statusCode":"200","referenceCode":"1411368284141136828471398","serverReferenceCode":"5512111501582196339217952"},"subscriptionInfo":{"subscriptionId":"5502111501581934009091459","productIdentifier":"1452","serviceIdentifier":"SUB00010201205","subscriptionStatus":"1","validity":"1","nextRenewalDate":"2020-02-21 16:58:59.269"}}, ivr_sessionduration=, method=CRM_ActivateSubscriber, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:58:59, ivr_dtmf=, transaction_by_csr=0, partner_reference_code=1411368284141136828471398, apierrorcode=0, serviceid=SUB00010201205, sourcechannel=CRM, csr_info=0, ivr_incport=, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:42</td>
-<td class='step-details'>Data is Available for  Activate Subscriber : SELECT * FROM gateway_logs_21.servicemgr_translog WHERE trans_type='CRM_ACT' AND gtr_id='5512111501582196339217952' : {buid=2, requested_price=100, request={"accesInfo":{"reqAction":"1","endUserId":"8801307257910","accesskey":"d5a3f90c062248a7be17e4deed14b23e","serverReferenceCode":"5512111501582196339217952","serviceCode":"SUB00010201205","action":"activation","requestSource":"CRM","accesschannel":"CRM","referenceCode":"1411368284141136828471398"},"charge":{"autorenewalFlag":1,"code":"SUB0001020120519411527","chargeUserFlag":1,"serviceIdentifier":"SUB00010201205"},"transInfo":{"transactionType":"CRM_ACT","originatingTimestamp":"2020-02-20 16:58:59.217"}}, node_ip=10.21.11.50, description=SKIPPING GETBAL FOR EXISTING USER||ACCEPTED, source=SM50, requested_charge_code=SUB0001020120519411527, sid=1205, duration=55, originating_timestamp=2020-02-20 16:58:59, action=activation, id=7, billed_price=100, msisdn=8801307257910, trans_type=CRM_ACT, custermer_segment_id=0, transaction_start_time=2020-02-20 16:58:59, billed_charge_code=SUB0001020120519411527, transaction_end_time=2020-02-20 16:58:59, gtr_id=5512111501582196339217952, cor_id=1411368284141136828471398, created_on=2020-02-20 16:59:01, response={"statusInfo":{"endUserId":"8801307257910","totalAmountCharged":"1.00","serverReferenceCode":"5512111501582196339217952","pulseDuration":"0","statusText":"ACCEPTED","sessionId":"","referenceCode":"1411368284141136828471398","moNotifyFlag":0,"statusCode":"71000"},"subscriptionInfo":{"productIdentifier":"1452","subscriptionStatus":"1","nextRenewalDate":"2020-02-21 16:58:59.269","validity":"1","subscriptionId":"5502111501581934009091459","serviceIdentifier":"SUB00010201205"}}, evt_id=activation, error_code=71000, channel_id=crm, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:43</td>
-<td class='step-details'>Data is Available for  Activate Subscriber : SELECT * FROM gateway_logs_21.subscription_manager_trans_logs WHERE current_subscription_status='1' AND  trans_type='CRM_ACT' AND gtr_id='5512111501582196339217952' : {buid=2, requested_price=100, processing_time=13, node_ip=10.21.11.50, charge_code=SUB0001020120519411527, current_subscription_status=1, registered_on=0000-00-00 00:00:00, source=50, activation_channel=crm, subscription_id=5502111501581934009091459, partner_id=102, registeration_channel=0, originating_timestamp=2020-02-20 16:58:59.217000000, error_desc=, previous_subscriber_state=1, service_id=SUB00010201205, product_id=1452, id=3, msisdn=8801307257910, activated_on=2020-02-20 16:58:59.269, deactivation_channel=0, trans_type=CRM_ACT, next_renewal_on=2020-02-21 16:58:59.269, transaction_source_channel=crm, deactivated_on=0000-00-00 00:00:00, transaction_type=activation, charge_price=100, gtr_id=5512111501582196339217952, previous_subscription_state=0, created_on=2020-02-20 16:58:59, bill_error_code=62200, error_code=71000, validity=1, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:44</td>
-<td class='step-details'>Data is Available for  Activate Subscriber : SELECT * FROM gateway_logs_21.charging_gateway_trans_logs WHERE trans_type='CRM_ACT' AND gtrid='5512111501582196339217952' : {requested_price=100, buid=2, tax_amount=22, discount_rule_id=0, charge_type=2, priceplan_id=1547, charged_price=100, opid=470001, charge_logic=1, pid=0, source=50, servicegroup=1038001, tid=540dca83-a3c4-486f-b94c-03b72c3a4a33, concurrent_hits=1, media_type=SUB, error_description=DIAMETER DEBIT SUCCESS, addon_service_id=0, product_id=SUB01, billingaccountid=0, action=1, dwn_credits_credited=0, media_id=0, id=3, pvalidity=0, retry_attempt_count=0, cyclecount=0, usp_dedited=0, agentid=0, d_service_ref_id=0, actid=0, nodeip=10.21.11.50, cgtrid=0, product_name=Automation_prod1, subscriber_type=1, created_on=2020-02-20 16:59:09, total_amount=122, agentname=0, tax_applied=1, error_code=2001, status=0, pulse_duration=0, extraparams={}, vendormediaid=0, status_code=62200, originationtype=MT, action_type=activation, charge_code=SUB0001020120519411527, dwn_credits_available=0, description=Request Processed Successfully, ptype=0, loyalty_credits=0, partner_id=102, api_request={"endUserId":"8801307257910","gtrId":"5512111501582196339217952","amount":100,"opId":"470001","extraParams":{"requested_price":"100","discount_rule_id":"0","charge_type":2,"productid":"SUB01","priceplan_id":"1547","channel":"crm","charge_logic":1,"pid":"0","source":"50","servicegroup":1038001,"media_type":"SUB","purchasecategorycode":"SUB","dwn_credits_credited":"0","pvalidity":"0","retry_attempt_count":"0","usp_dedited":"0","smppaccountid":"19352","messagelength":"0","product_name":"Automation_prod1","subscriber_type":"1","multipart":"0","taxinclusive":"false","clientcorrelator":"1411368284141136828471398","action_type":"activation","charge_code":"SUB0001020120519411527","dwn_credits_available":"0","ptype":"0","referencecode":"5512111501582196339217952","available_balance":100,"totalmessageparts":"0","loyalty_credits":"0","partner_id":"102","originating_timestamp":"2020-02-20 16:58:59.217","discount_applied":"0","dcs":"0","pulseDuration":"0","ptitle":"0","traffic_case":"20","trans_type":"CRM_ACT","buId":"2","clanum":"267","onbehalfof":"IMImobile-C","discount_value":"0","requested_channel":"crm","dwn_credits_dedited":"0","sessionId":"","promo_id":"0","discount_mode":"0","discount_plan_id":"0","service_type":2,"product_type":"1","pulseRate":"0","consent_gw_tid":"","serviceid":"SUB00010201205","pthumbnailurl":"0","remarks":"|Testservice1|Testservice1|","pdownloadurl":"0","usp_credited":"0"},"userType":"1"}, discount_applied=0, originating_timestamp=2020-02-20 16:58:59.217000000, content_type=0, vendorchannel=0, service_id=SUB00010201205, bparty=0, ptitle=0, debtamount=0, msisdn=8801307257910, ref_service_id=0, api_response={"gtrId":"5512111501582196339217952","responseText":"REQUEST PROCESSED","extraParams":{"accountId":"999000001000063682","accountBalanceChange":"290000","currentAccountBalance":"38043333","accountType":2000,"opId":"470001","vendorErrorCode":"2001"},"tid":"540dca83-a3c4-486f-b94c-03b72c3a4a33","responseCode":"62200","taxInfo":{"taxValue":"22","totalPrice":"122","statusCode":73000,"basePrice":"100"}}, trans_type=CRM_ACT, gtrid=5512111501582196339217952, clanum=267, discount_value=0, requested_channel=crm, dwn_credits_dedited=0, transaction_timestamp=2020-02-20 16:58:59.250000000, promo_id=0, time_taken=17, discount_mode=0, discount_plan_id=0, trans_end_datetime=2020-02-20 16:58:59.267000000, service_type=2, product_type=1, cgw_instance_id=DIAMETER_4, pthumbnailurl=0, usp_credited=0, pdownloadurl=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:45</td>
-<td class='step-details'>Data is Available for  Activate Subscriber : SELECT * FROM gateway_logs_21.gw_mt_trans_log WHERE trans_type='CRM_ACT' AND gtrid='5512111501582196339217952' : {esmeid=2, retrycount=0, submitstatus=0, receivedtimestamp=2020-02-20 16:59:06, shortcode=19352, msgsequenceno=0, partnerrefcode=1411368284141136828471398, timetaken=8720, originating_timestamp=2020-02-20 16:58:59.217000000, dcs=0, msgparts=1, id=3, partnerid=102, msisdn=8801307257910, msglength=110, trans_type=CRM_ACT, smsctransid=AEDE6408D053EA619EAD01000600D55E, gtrid=5512111501582196339217952, drflag=0, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:59:14.720000000, chargecode=SUB0001020120519411527, message=Testservice1 Service started successfully. Daily charge 1.22tk/1Day. To stop, sms STOP UNSUBSCRIPTION To 19352, promotionid=0, mttype=2, serviceid=SUB00010201205, submitdescription=0, sourcechannel=crm}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:45</td>
-<td class='step-details'>Data is Available for  Activate Subscriber : SELECT * FROM gateway_logs_21.diameter_trans_logs WHERE trans_type='CRM_ACT' AND gtrid='5512111501582196339217952' : {requested_price=100, buid=2, diameteripport=10.21.11.51:9143, request={"endUserId":"8801307257910","gtrId":"5512111501582196339217952","amount":100,"opId":"470001","extraParams":{"requested_price":"100","discount_rule_id":"0","charge_type":2,"productid":"SUB01","priceplan_id":"1547","channel":"crm","charge_logic":1,"pid":"0","source":"50","servicegroup":1038001,"media_type":"SUB","purchasecategorycode":"SUB","dwn_credits_credited":"0","pvalidity":"0","retry_attempt_count":"0","usp_dedited":"0","smppaccountid":"19352","messagelength":"0","product_name":"Automation_prod1","subscriber_type":"1","multipart":"0","taxinclusive":"false","clientcorrelator":"1411368284141136828471398","action_type":"activation","charge_code":"SUB0001020120519411527","dwn_credits_available":"0","ptype":"0","referencecode":"5512111501582196339217952","available_balance":100,"totalmessageparts":"0","loyalty_credits":"0","partner_id":"102","originating_timestamp":"2020-02-20 16:58:59.217","discount_applied":"0","dcs":"0","pulseDuration":"0","ptitle":"0","traffic_case":"20","trans_type":"CRM_ACT","buId":"2","clanum":"267","onbehalfof":"IMImobile-C","discount_value":"0","requested_channel":"crm","dwn_credits_dedited":"0","sessionId":"","promo_id":"0","discount_mode":"0","discount_plan_id":"0","service_type":2,"product_type":"1","pulseRate":"0","consent_gw_tid":"","serviceid":"SUB00010201205","pthumbnailurl":"0","remarks":"|Testservice1|Testservice1|","pdownloadurl":"0","usp_credited":"0"},"userType":"1"}, status_code=62200, priceplan_id=1547, charge_code=SUB0001020120519411527, charged_price=100, in_account_id=42, description=Request Processed Successfully, source=50, available_balance=100, submit_status=0, tid=540dca83-a3c4-486f-b94c-03b72c3a4a33, concurrent_hits=1, partner_id=102, originating_timestamp=2020-02-20 16:58:59.217000000, media_type=SUB, error_description=DIAMETER DEBIT SUCCESS, service_id=SUB00010201205, product_id=SUB01, action=1, in_req_corrid=SIM_42.grameenphone.com;1582196339;10287, msisdn=8801307257910, in_res_corrid=0, trans_type=CRM_ACT, gtrid=5512111501582196339217952, nodeip=10.21.11.50, transaction_timestamp=2020-02-20 16:58:59.250000000, product_name=Automation_prod1, time_taken=17, trans_end_datetime=2020-02-20 16:58:59.262000000, service_type=2, created_on=2020-02-20 16:59:07, response={"gtrId":"5512111501582196339217952","responseText":"REQUEST PROCESSED","extraParams":{"accountId":"999000001000063682","accountBalanceChange":"290000","currentAccountBalance":"38043333","accountType":2000,"opId":"470001","vendorErrorCode":"2001"},"tid":"540dca83-a3c4-486f-b94c-03b72c3a4a33","responseCode":"62200","taxInfo":{"taxValue":"22","totalPrice":"122","statusCode":73000,"basePrice":"100"}}, cgw_instance_id=DIAMETER_4, error_code=2001, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:29:48</td>
-<td class='step-details'>Data is Available for  Activate Subscriber : SELECT * FROM gateway_logs_21.gw_notify_trans_log WHERE trans_type='CRM_ACT' AND gtrid='5512111501582196339217952' : {gtrid=5512111501582196339217952, retrycount=0, status_code=0, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:59:05, receivedtimestamp=2020-02-20 16:59:06, type=ACT_BILL_SUC, message={"subscriptionInfo":{"productIdentifier":"1452","statusChangedDate":"2020-02-20 16:59:02","subscriptionStatus":"1","registrationDate":"2020-02-20 16:58:55.241","nextRenewalDate":"2020-02-21 16:58:59.269","validity":"1","subscriptionId":"5502111501581934009091459","activationDate":"2020-02-20 16:58:59.269","lastRenewalDate":"","lastChangedAmount":"1.00","serviceIdentifier":"SUB00010201205"},"accessInfo":{"endUserId":"576802471981345554","servicekey":"a1fb208d3f8b40c1992e70331ed2f1dc","language":"","referenceCode":"5512111501582196339217952","accesschannel":"crm"}}, url=http://10.21.11.51:7777/reqbin/values, errordescription=, timetaken=36, originating_timestamp=2020-02-20 16:58:59.217000000, response=|BatchCount:1|Code  : 200 OK text/plain; charset=utf-8 0, id=3, msisdn=, serviceid=SUB00010201205, errorcode=200, status=0, trans_type=CRM_ACT}</td>
-</tr>
-</tbody>
-</table>
-<ul class='collapsible node-list' data-collapsible='accordion'>
-</ul>
-</div>
-</div>
-</li>
-<li class='collection-item test displayed active pass ' extentid='2f5adeea-d528-4319-b044-81cdca2a8f5a'>
-<div class='test-head'>
-<span class='test-name'>De-activate Subscriber DB Details </span>
-<span class='test-status label right outline capitalize pass'>pass</span>
-<span class='category-assigned hide '></span>
-</div>
-<div class='test-body'>
-<div class='test-info'>
-<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2020-02-20 16:29:48</span>
-<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
-</div>
-<div class='test-desc'>DPDP-GP-DB Details</div>
-<div class='test-attributes'>
-</div>
-<div class='test-steps'>
-<table class='bordered table-results'>
-<thead>
-<tr>
-<th>Status</th>
-<th>Timestamp</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:30:04</td>
-<td class='step-details'>Data is Available for  De-activate Subscriber : SELECT * FROM gateway_logs_21.gw_api_trans_log WHERE trans_type='CRM_UNSUB' AND gtrid='5512111501582196340798953' : {ivr_gtrid=, receivedtimestamp=2020-02-20 16:59:00.798000000, errordescription=, timetaken=105, originating_timestamp=2020-02-20 16:59:00.798000000, partnerip=203.199.178.211, id=21, partnerid=102, msisdn=8801307257910, errorcode=0, ivr_msc=, req={"subscriptionInfo":{"subscriptionId":"5502111501581934009091459","productIdentifier":"1452","serviceIdentifier":"SUB00010201205"},"accesInfo":{"serviceCode":"SUB00010201205","accesskey":"d5a3f90c062248a7be17e4deed14b23e","endUserId":"8801307257910","accesschannel":"CRM","referenceCode":"1891629458189162945819295","serverReferenceCode":"5512111501582196340798953","action":"deactivation","requestSource":"CRM","reqAction":"1"},"transInfo":{"originatingTimestamp":"2020-02-20 16:59:00.798","transactionType":"CRM_UNSUB"}}, trans_type=CRM_UNSUB, gtrid=5512111501582196340798953, res={"statusInfo":{"statusCode":"200","referenceCode":"1891629458189162945819295","serverReferenceCode":"5512111501582196340798953"},"subscriptionInfo":{"subscriptionId":"5502111501581934009091459","productIdentifier":"1452","serviceIdentifier":"SUB00010201205","subscriptionStatus":"11","validity":"1","nextRenewalDate":"2020-02-21 16:58:59.269"}}, ivr_sessionduration=, method=CRM_DeActivateSubscriber, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:59:01, ivr_dtmf=, transaction_by_csr=0, partner_reference_code=1891629458189162945819295, apierrorcode=0, serviceid=SUB00010201205, sourcechannel=CRM, csr_info=0, ivr_incport=, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:30:05</td>
-<td class='step-details'>Data is Available for  De-activate Subscriber : SELECT * FROM gateway_logs_21.servicemgr_translog WHERE trans_type='CRM_UNSUB'  AND gtr_id='5512111501582196340798953' : {buid=2, requested_price=0, request={"accesInfo":{"reqAction":"1","endUserId":"8801307257910","accesskey":"d5a3f90c062248a7be17e4deed14b23e","serverReferenceCode":"5512111501582196340798953","serviceCode":"SUB00010201205","action":"deactivation","requestSource":"CRM","accesschannel":"CRM","referenceCode":"1891629458189162945819295"},"subscriptionInfo":{"productIdentifier":"1452","subscriptionId":"5502111501581934009091459","serviceIdentifier":"SUB00010201205"},"transInfo":{"transactionType":"CRM_UNSUB","originatingTimestamp":"2020-02-20 16:59:00.798"}}, node_ip=10.21.11.50, description=|ACCEPTED, source=SM50, requested_charge_code=0, sid=1205, duration=103, originating_timestamp=2020-02-20 16:59:01, action=deactivation, id=8, billed_price=0, msisdn=8801307257910, trans_type=CRM_UNSUB, custermer_segment_id=0, transaction_start_time=2020-02-20 16:59:01, billed_charge_code=0, transaction_end_time=2020-02-20 16:59:01, gtr_id=5512111501582196340798953, cor_id=1891629458189162945819295, created_on=2020-02-20 16:59:01, response={"statusInfo":{"endUserId":"8801307257910","totalAmountCharged":"0.00","serverReferenceCode":"5512111501582196340798953","pulseDuration":"0","statusText":"ACCEPTED","sessionId":"","referenceCode":"1891629458189162945819295","moNotifyFlag":0,"statusCode":"71000"},"subscriptionInfo":{"productIdentifier":"1452","subscriptionStatus":"11","nextRenewalDate":"2020-02-21 16:58:59.269","validity":"1","subscriptionId":"5502111501581934009091459","serviceIdentifier":"SUB00010201205"}}, evt_id=deactivation, error_code=71000, channel_id=crm, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:30:06</td>
-<td class='step-details'>Data is Available for  De-activate Subscriber : SELECT * FROM gateway_logs_21.subscription_manager_trans_logs WHERE current_subscription_status='11' AND trans_type='CRM_UNSUB' AND  gtr_id='5512111501582196340798953' : {buid=2, requested_price=0, processing_time=16, node_ip=10.21.11.50, charge_code=0, current_subscription_status=11, registered_on=0000-00-00 00:00:00, source=50, activation_channel=0, subscription_id=5502111501581934009091459, partner_id=102, registeration_channel=0, originating_timestamp=2020-02-20 16:59:00.798000000, error_desc=, previous_subscriber_state=1, service_id=SUB00010201205, product_id=1452, id=4, msisdn=8801307257910, activated_on=0000-00-00 00:00:00, deactivation_channel=crm, trans_type=CRM_UNSUB, next_renewal_on=0000-00-00 00:00:00, transaction_source_channel=crm, deactivated_on=2020-02-20 16:59:00.886, transaction_type=deactivation, charge_price=0, gtr_id=5512111501582196340798953, previous_subscription_state=1, created_on=2020-02-20 16:59:01, bill_error_code=0, error_code=71000, validity=0, status=0}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:30:07</td>
-<td class='step-details'>Data is Available for  De-activate Subscriber : SELECT * FROM gateway_logs_21.gw_mt_trans_log WHERE trans_type='CRM_UNSUB' AND gtrid='5512111501582196340798953' : {esmeid=9, retrycount=0, submitstatus=0, receivedtimestamp=2020-02-20 16:59:06, shortcode=19352, msgsequenceno=0, partnerrefcode=1891629458189162945819295, timetaken=8739, originating_timestamp=2020-02-20 16:59:00.798000000, dcs=0, msgparts=1, id=4, partnerid=102, msisdn=8801307257910, msglength=133, trans_type=CRM_UNSUB, smsctransid=124F6808D053EA61A36201000000842F, gtrid=5512111501582196340798953, drflag=0, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:59:14.739000000, chargecode=, message=Auto renewal of your Testservice1 service was unsuccessful due to insufficient balance. To start again, sms START SERVICEWOW to 19352, promotionid=0, mttype=2, serviceid=SUB00010201205, submitdescription=0, sourcechannel=crm}</td>
-</tr>
-<tr>
-<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-<td class='timestamp'>16:30:08</td>
-<td class='step-details'>Data is Available for  De-activate Subscriber : SELECT * FROM gateway_logs_21.gw_notify_trans_log WHERE trans_type='CRM_UNSUB' AND gtrid='5512111501582196340798953' : {gtrid=5512111501582196340798953, retrycount=0, status_code=0, nodeip=10.21.11.50, submittimestamp=2020-02-20 16:59:10, receivedtimestamp=2020-02-20 16:59:10, type=DEACT_SUC, message={"subscriptionInfo":{"productIdentifier":"1452","statusChangedDate":"2020-02-20 16:59:02","subscriptionStatus":"11","registrationDate":"2020-02-20 16:58:55.241","nextRenewalDate":"2020-02-21 16:58:59.269","validity":"1","subscriptionId":"5502111501581934009091459","activationDate":"2020-02-20 16:58:59.269","lastRenewalDate":"","lastChangedAmount":"0.00","serviceIdentifier":"SUB00010201205"},"accessInfo":{"endUserId":"576802471981345554","servicekey":"a1fb208d3f8b40c1992e70331ed2f1dc","language":"","referenceCode":"5512111501582196340798953","accesschannel":"crm"}}, url=http://10.21.11.51:7777/reqbin/values, errordescription=, timetaken=13, originating_timestamp=2020-02-20 16:59:00.798000000, response=|BatchCount:1|Code  : 200 OK text/plain; charset=utf-8 0, id=4, msisdn=, serviceid=SUB00010201205, errorcode=200, status=0, trans_type=CRM_UNSUB}</td>
+<td class='timestamp'>18:23:39</td>
+<td class='step-details'>Mongo Collection for De-activate Subscriber  :  {"_id": "8801309000236", "subscriber": {"msisdn": "8801309000236", "state": 1, "createdOn": "2020-10-23 17:13:40.317", "updatedOn": "2020-10-23 17:13:40.317", "lbChargeCode": "SUB0003400544320121637", "lbSid": 5443, "opid": 470001, "active_sids": [], "userType": 2, "profileId": "5522111501603451620169047", "imsi": "", "vmsisdn": "576802587644914450", "userClass": "1", "imei": "", "uaprofile": "", "naDate": "", "fname": "", "lname": "", "language": "EN", "gender": "", "email": "", "birthDate": "", "nationality": "", "loginId": "", "password": "", "loginStatus": -1, "lastLogonDate": "", "employeeFlag": -1, "dndflag": false, "segmentList": [], "blackList": false, "inactiveSids": [5443], "lastBilledOn": "2020-10-23 17:13:40.319", "lastChargedProductid": 7875, "lastChargingStatus": 62200, "biometricRegStatus": 1, "tg": {}, "blklstrsn": "", "rbtStatus": -1, "mainSId": 0, "picPath": "", "phoneId": "", "accId": "0", "userNtw": 0, "corpId": 0, "custLstChngDt": "2020-10-23 17:13:40.000", "fstSwtchOnDt": "2020-10-23 17:13:40.000", "swtchOnDt": "2020-10-23 17:13:40.000", "billDay": 0, "risk": false, "vip": false, "parentPhn": 0, "whiteLstSrvcGrp": [], "whiteLstSrvc": [], "blockLstSrvcGrp": [], "blockLstSrvc": [], "pkgCode": "", "VMS": 0, "MCN": 0, "blockRangeCharging": false, "blockRefund": false, "blockCharging": false, "region": "", "switchOnReasonCode": "", "switchOffDttm": "", "switchOffReasonCod": "", "billingAccountId": "", "assetActDate": "", "assetIActDate": ""}, "chnlLang": {"smsLang": "EN", "ccLang": "EN", "ivrLang": "EN"}, "subscriptions": [{"subsId": "5522111501603451621567048", "state": 11, "prvsState": 0, "onHldDt": "", "onResumeDt": "", "createdOn": "2020-10-23 17:13:41.619", "updatedOn": "2020-10-23 17:20:33.811", "regOn": "2020-10-23 17:20:28.867", "regChannel": "crm", "regTid": "5522111501603452028830053", "regPeriod": 1, "giftedBy": -1, "renewedOn": "", "renewalType": -1, "nextRenewal": "2020-11-22 17:20:30.147", "validity": 30, "units": -1, "prerenewalState": 0, "productId": 7875, "opid": 0, "reqChrgCode": "SUB0003400544320121637", "cCode": "SUB0003400544320121637", "lbPrice": 100, "serviceId": 5443, "actOn": "2020-10-23 17:20:30.147", "actChannel": "crm", "actTid": "5522111501603452030088054", "consnetGwTid": "", "deregDate": "", "deactDate": "2020-10-23 17:20:33.811", "unsubDate": "", "unsubChannel": "crm", "actRetryCount": 0, "renRetryCount": 0, "priority": 1, "lcTid": "5522111501603452030088054", "autoRenewal": true, "planDuration": 30, "actSCode": "", "srvcCode": "SUB00034005443", "srvcTmpl": "", "srvcGrp": "1038001", "mediaId": "", "mediaName": "", "billTid": "", "renCycleCnt": 0, "contentType": -1, "productType": 1, "rightId": "", "skuCode": "", "srvcType": 2, "subStatus": 0, "optInState": 0, "optInDt": "", "regRetryCount": 0, "usedDays": 0, "reActOn": "", "parentSId": 0, "oneTimeFree": false, "omPkgCode": "", "inBnft": false, "srvPackGrp": 0, "expiryOn": "", "actKW": "", "unSubSCode": "", "unSubKW": "", "ftActOn": "", "lastBilledOn": "2020-10-23 17:20:30", "curRenCycCnt": 0}]}</td>
 </tr>
 </tbody>
 </table>

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16" started-at="2020-02-25T07:15:40Z" finished-at="2020-02-25T07:15:40Z">
+  <suite name="Default suite" duration-ms="2747" started-at="2020-10-23T12:53:37Z" finished-at="2020-10-23T12:53:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16" started-at="2020-02-25T07:15:40Z" finished-at="2020-02-25T07:15:40Z">
+    <test name="Default test" duration-ms="2747" started-at="2020-10-23T12:53:37Z" finished-at="2020-10-23T12:53:39Z">
+      <class name="TelenorGp.GPAPI">
+        <test-method status="PASS" signature="reports()[pri:0, instance:TelenorGp.GPAPI@13a5fe33]" name="reports" is-config="true" duration-ms="155" started-at="2020-10-23T12:53:37Z" finished-at="2020-10-23T12:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reports -->
+        <test-method status="PASS" signature="mongoverify()[pri:2, instance:TelenorGp.GPAPI@13a5fe33]" name="mongoverify" duration-ms="2281" started-at="2020-10-23T12:53:37Z" finished-at="2020-10-23T12:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mongoverify -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TelenorGp.GPAPI@13a5fe33]" name="tearDown" is-config="true" duration-ms="287" started-at="2020-10-23T12:53:39Z" finished-at="2020-10-23T12:53:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TelenorGp.GPAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

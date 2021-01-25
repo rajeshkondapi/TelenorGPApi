@@ -5,7 +5,7 @@
     <classes>
       <class name="TelenorGp.GPAPI">
         <methods>
-          <include name="gtridsheet"/>
+          <include name="mongoverify"/>
           <include name="tearDown"/>
           <include name="reports"/>
         </methods>

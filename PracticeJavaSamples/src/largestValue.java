@@ -15,6 +15,6 @@ public class largestValue {
 				}
 				//System.out.println(val);
 			}
-			System.out.println("Largest value in the Given Array is "+ val);
+			System.out.println("greatest value in the Given Array is "+ val);
 		}
 	}

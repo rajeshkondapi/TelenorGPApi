@@ -9,17 +9,27 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.bson.Document;
+import org.bson.conversions.Bson;
+
+import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.MongoException;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import com.mongodb.util.JSON;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -30,7 +40,7 @@ public class DbConn extends MongoTest {
 	ExtentTest logger;
 
 	Properties obj = new Properties();
-
+	
 	public Properties propertyelements() throws IOException {
 
 		FileInputStream objfile = new FileInputStream(System.getProperty("user.dir") + "\\DPDP.properties");
@@ -38,38 +48,39 @@ public class DbConn extends MongoTest {
 		return obj;
 	}
 
-	public String mongoDB(String id, String dbname, String collectionname) {
-
-		try {
-			
-			
-
-			String dbURI = "mongodb://AppUser:atLQL1KX1P5w@10.21.11.52:9075/admin";
+	public String mongoDB(String id, String dbname, String collectionname,String apiMethod) throws IOException {
+		propertyelements();
+		try {	
+			String dbURI = obj.getProperty("mongourl");
 			MongoClient mongoClient = new MongoClient(new MongoClientURI(dbURI));
-
 			DB db = mongoClient.getDB(dbname);
 			DBCollection collection = db.getCollection(collectionname);
-
-			BasicDBObject query = new BasicDBObject();
-			query.put("_id", id);
-
-			System.out.println(query);
-
-			/* Step 5 : Get all documents */
-			DBCursor cursor = collection.find(query);
-
-			// if(cursor.hasNext()) {
-			/* Step 6 : Print all documents */
-			while (cursor.hasNext()) {
-				// System.out.println(cursor.next());
-				logger.log(LogStatus.PASS, "Mongo Collection :  " + cursor.next());
-				// }
-			} // else {
-				// logger.log(LogStatus.FAIL, "No Records Found ");
-				// }
-
-			// logger.log(LogStatus.PASS, "Mongo Details : "+jo);
-
+			BasicDBObject query1 = new BasicDBObject();
+			query1.put("_id", id);
+			BasicDBObject outer = null;
+			List<BasicDBObject> objelement = new ArrayList<BasicDBObject>();
+			if(apiMethod.equals("Register Subscriber")) {
+				objelement.add(new BasicDBObject("cCode", obj.getProperty("cCode")).append("state", 0));				
+			} else if(apiMethod.equals("Activate Subscriber")) {
+				objelement.add(new BasicDBObject("cCode", obj.getProperty("cCode")).append("state", 1));
+			} else if(apiMethod.equals("De-activate Subscriber")) {
+				objelement.add(new BasicDBObject("cCode", obj.getProperty("cCode")).append("state", 11));				
+			}
+			query1.append("subscriptions", new BasicDBObject("$elemMatch", objelement));
+			System.out.println(query1.toString().replace("[", "").replace("]", ""));
+			String js = query1.toString().replace("[", "").replace("]", "");
+			
+			DBCursor cursor = collection.find(new BasicDBObject().parse(js));
+			
+			 if(cursor.hasNext()) {
+				 while (cursor.hasNext()) {
+						logger.log(LogStatus.PASS, "Mongo Collection for " +apiMethod+ "  :  " + cursor.next());				
+				 	}
+			}  else {
+				 logger.log(LogStatus.FAIL, "No Records Found for "+apiMethod);
+				 logger.log(LogStatus.FAIL, "Mongo Query  "+query1);				 
+				 System.out.println("No");
+				 }
 			mongoClient.close();
 		} catch (MongoException e) {
 			e.printStackTrace();
@@ -77,6 +88,8 @@ public class DbConn extends MongoTest {
 		return "Unable to get Details !";
 
 	}
+
+	
 
 	List<String> otpget = new ArrayList<>();
 

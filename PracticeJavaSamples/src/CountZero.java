@@ -30,7 +30,7 @@ public class CountZero {
 
 	public static void main(String[] args) {
 
-		int res =  GetCount(10);
+		int res =  GetCount(100);
 		System.out.println("reslt= "+res);
 
 	}

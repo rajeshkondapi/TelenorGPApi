@@ -37,14 +37,15 @@ public class GPAPI extends EmailReport {
 
 	static SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
 	
-	@Test(priority=2,enabled=false)
-	public void mongoverify() {
+	@Test(priority=2,enabled=true)
+	public void mongoverify() throws IOException {
 		logger = extent.startTest("MONGO", "MONGO Check");
-		mongoDB("8802222200011","profilemanager","userinfo");
+		propertyelements();
+		mongoDB(obj.getProperty("_id"),"profilemanager","userinfo","De-activate Subscriber");
 		
 	}
 
-	@Test(priority=0,enabled=true)
+	@Test(priority=0,enabled=false)
 	public void apicall() throws Exception {
 
 		propertyelements();
@@ -132,7 +133,8 @@ public class GPAPI extends EmailReport {
 					logger.log(LogStatus.PASS, "API Response for " + apiMethod + " ==" + respactivate.asString());
 					if(apiMethod.equalsIgnoreCase("De-activate Subscriber") || apiMethod.equalsIgnoreCase("Activate Subscriber") || apiMethod.equalsIgnoreCase("Register Subscriber"))
 					{
-						mongoDB("8801307257910","profilemanager","userinfo");
+						//mongoDB("8801307257910","profilemanager","userinfo",apiMethod);
+						mongoDB(obj.getProperty("_id"),"profilemanager","userinfo",apiMethod);
 					}
 					
 					// gtridsheet();
@@ -341,7 +343,7 @@ public class GPAPI extends EmailReport {
 		}
 	}
 
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void gtridsheet() throws Exception {
 		FetchOtp("DPDP_DB");
 	}
